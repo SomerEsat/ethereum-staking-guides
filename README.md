@@ -16,7 +16,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 ## Requirements
 - Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
 - MetaMask crypto wallet browser extension, configured.
-- Prysm minimum requirements ([link](https://docs.prylabs.network/docs/install/linux/))
+- Prysm minimum requirements ([link](https://docs.prylabs.network/docs/install/linux/)):
   - Operating System: 64-bit Linux, Mac OS X 10.14+, Windows
   - Processor: Intel Core i5–760 or AMD FX-8100 or better
   - Memory: 4GB RAM
