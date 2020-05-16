@@ -13,5 +13,7 @@ Before you get started you will need to have your Ubuntu server instance up and 
 Security is important. This is not a comprehensive security guide, rather just some basic settings.
 #### Create a user-level account
 Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
+
 ```# adduser yourusername```
+
 You will asked to create a password and some other infomration.
