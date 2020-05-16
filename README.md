@@ -16,9 +16,21 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 ### Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, just some basic settings.
 
-> Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. Start by logging in as root then create a new user. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
+#### Configure a firewall
+
+Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, TCP port 13000, and UDP port 12000 to connect to the server.
+
+> TCP/13000 and UDP/12000 are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs as incoming P2P connection prerequisites.
+
+Allow OpenSSH - Allows connection to the server over SSH (port 22). This should already be allowed, but just to make sure:
+
+```ufw allow OpenSSH```
+
+Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
 
 #### Create a new user
+
+> Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. Start by logging in as root then create a new user. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
 
 ```adduser yourusername```
 
@@ -31,15 +43,3 @@ Modify the permissions of the new user to grant admin rights to the user by addi
 ```usermod -aG sudo yourusername```
 
 When you log in as ```yourusername``` you can type sudo before commands to perform actions with superuser privileges.
-
-#### Configure a firewall
-
-Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, TCP port 13000, and UDP port 12000 to connect to the server.
-
-> TCP/13000 and UDP/12000 are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs as incoming P2P connection prerequisites.
-
-Allow OpenSSH - Allows connection to the server over SSH (port 22). This should already be allowed, but just to make sure:
-
-```ufw allow OpenSSH```
-
-Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
