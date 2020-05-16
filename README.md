@@ -22,41 +22,59 @@ Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/
 
 Allow SSH - Allows connection to the server over SSH (port 22/TCP).
 
-```ufw allow 22/tcp```
+```
+ufw allow 22/tcp
+```
 
 Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
 
-```ufw allow 3389/tcp```
+```
+ufw allow 3389/tcp
+```
 
 Or if you want better security, limit connections to just your local IP address:
 
-```ufw allow from <yourlocalipaddress> to any port 3389 proto tcp```
+```
+ufw allow from <yourlocalipaddress> to any port 3389 proto tcp
+```
 
 Allow Ports 13000/TCP and 12000/UDP:
 
 > 13000/TCP and 12000/UDP are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs as incoming P2P connection prerequisites.
 
-```ufw allow 13000/tcp```
+```
+ufw allow 13000/tcp
+```
 
-```ufw allow 12000/udp```
+```
+ufw allow 12000/udp
+```
 
 Check to verify the rules have been correctly configured:
 
-```ufw status numbered```
+```
+ufw status numbered
+```
 
-```Output:```
-```....```
+```
+Output:
+...
+```
 
 #### Create a new user and grant administrative privileges
 
 > Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. Start by logging in as root then create a new user. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
 
-```adduser <yourusername>```
+```
+adduser <yourusername>
+```
 
 You will asked to create a password and some other infomration.
 
 Next, modify the permissions of the new user to grant admin rights to the user by adding them to the sudo group.
 
-```usermod -aG sudo <yourusername>```
+```
+usermod -aG sudo <yourusername>
+```
 
 When you log in as ```<yourusername>``` you can type sudo before commands to perform actions with superuser privileges.
