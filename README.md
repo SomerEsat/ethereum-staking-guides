@@ -37,11 +37,13 @@ Or if you want better security, limit connections to just your local IP address:
 Allow Ports 13000/TCP and 12000/UDP:
 
 ```ufw allow 13000/tcp```
+
 ```ufw allow 12000/udp```
 
 Check to verify the rules have been correctly configured:
 
 ```ufw status numbered```
+
 ```Output:```
 ```....```
 
