@@ -116,12 +116,11 @@ This step is questionable. The Prysm beacon and validator services could be run 
 
 > TODO(SE): I will revisit this step once I figure it out.
 
-The following will install a lightweight GUI onto the Ubuntu server called xfce ([link](https://www.xfce.org/)).
+The following will install a lightweight GUI onto the Ubuntu server called xfce ([link](https://www.xfce.org/)). If it gives you the option during setup, select ```lightdm```.
 
 ```
 sudo apt-get -y install xfce4 
 ```
-If it gives you the option select ```lightdm```.
 
 Next wire up the RDP to the xfce OS.
 
