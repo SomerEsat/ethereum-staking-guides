@@ -109,3 +109,30 @@ SSH into your Ubuntu instance with your newly created username and apply the fol
 sudo apt update && sudo apt upgrade
 sudo apt dist-upgrade && sudo apt autoremove
 ```
+
+## Step 3 - Install a lightweight GUI for RDP
+
+This step is questionable. The Prysm beacon and validator services could be run as background services on startup so you don't have to manually start them. However, the validator requires a password, and I'm not sure how to store it in a secure way. Probably via an ethdo wallet ([link](https://docs.prylabs.network/docs/prysm-usage/wallet-keymanager/)).
+
+> TODO(SE): I will revisit this step once I figure it out.
+
+The following will install a lightweight GUI onto the Ubuntu server called xfce ([link](https://www.xfce.org/)).
+
+```
+sudo apt-get -y install xfce4 
+```
+If it gives you the option select ```lightdm```.
+
+Next wire up the RDP to the xfce OS.
+
+```
+sudo apt-get -y install xrdp
+sudo systemctl enable xrdp
+echo xfce4-session >~/.xsession
+sudo service xrdp restart
+```
+
+Now you can RDP into the Ubuntu instance using a RDP client.
+
+
+## Step 4 - 
