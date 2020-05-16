@@ -16,7 +16,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 ## Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, rather just some basic settings: a firewall and a user account. This assumes you have console access to your Ubuntu instance and are logged in as the root user.
 
-### Configure a firewall
+### Configure the firewall
 
 Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP (for remote desktop connections), Grafana (for metrics), and Prysm (for incoming P2P connections) to connect to the server.
 
@@ -38,7 +38,7 @@ Allow Grafana - Allows incoming requests to the Grafana web server (port 3000/TC
 ufw allow 3000/tcp
 ```
 
-Or if you want better security, you can limit connections to just your local IP address:
+Or if you want better security you can limit connections to just your local IP address:
 
 ```
 ufw allow from <yourlocalipaddress> to any port 22 proto tcp
