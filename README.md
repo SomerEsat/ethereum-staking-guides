@@ -46,7 +46,7 @@ ufw allow from <yourlocalipaddress> to any port 3389 proto tcp
 ufw allow from <yourlocalipaddress> to any port 3000 proto tcp
 ```
 
-Allow Prysm - Allows P2P with peers for communication with the beacon node:
+Allow Prysm - Allows P2P connections with peers for actions on the beacon node:
 
 > 13000/TCP and 12000/UDP are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs.
 
