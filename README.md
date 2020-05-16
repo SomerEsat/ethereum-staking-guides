@@ -18,7 +18,7 @@ Security is important. This is not a comprehensive security guide, rather just s
 
 ### Configure a firewall
 
-Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, TCP port 13000, and UDP port 12000 to connect to the server.
+Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, Grafana (for metrics), and TCP port 13000/UDP port 12000 (for Prysm) to connect to the server.
 
 Allow SSH - Allows connection to the server over SSH (port 22/TCP).
 
@@ -32,10 +32,18 @@ Allow RDP - Allows connection to the server over RDP (port 3389). This is so we 
 ufw allow 3389/tcp
 ```
 
+Allow incoming requests to the Grafana server (port 3000/TCP):
+
+```
+ufw allow 3000/tcp
+```
+
 Or if you want better security, limit connections to just your local IP address:
 
 ```
+ufw allow from <yourlocalipaddress> to any port 22 proto tcp
 ufw allow from <yourlocalipaddress> to any port 3389 proto tcp
+ufw allow from <yourlocalipaddress> to any port 3000 proto tcp
 ```
 
 Allow Ports 13000/TCP and 12000/UDP:
@@ -77,7 +85,7 @@ Status: Active
 
 ### Create a new user and grant administrative privileges
 
-> Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. Start by logging in as root then create a new user. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
+Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account with admin privileges.
 
 ```
 adduser <yourusername>
@@ -92,3 +100,12 @@ usermod -aG sudo <yourusername>
 ```
 
 When you log in as ```<yourusername>``` you can type sudo before commands to perform actions with superuser privileges.
+
+## Step 2 - Update Your System
+
+SSH into your Ubuntu instance with your newly created username and apply the following commands to update the system.
+
+```
+sudo apt update && sudo apt upgrade
+sudo apt dist-upgrade && sudo apt autoremove
+```
