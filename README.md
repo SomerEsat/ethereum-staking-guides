@@ -18,7 +18,7 @@ Security is important. This is not a comprehensive security guide, rather just s
 
 ### Configure a firewall
 
-Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, Grafana (for metrics), and TCP port 13000/UDP port 12000 (for Prysm) to connect to the server.
+Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP (for remote desktop connections), Grafana (for metrics), and Prysm (for incoming P2P connections) to connect to the server.
 
 Allow SSH - Allows connection to the server over SSH (port 22/TCP).
 
@@ -32,13 +32,13 @@ Allow RDP - Allows connection to the server over RDP (port 3389). This is so we 
 ufw allow 3389/tcp
 ```
 
-Allow incoming requests to the Grafana server (port 3000/TCP):
+Allow Grafana - Allows incoming requests to the Grafana web server (port 3000/TCP):
 
 ```
 ufw allow 3000/tcp
 ```
 
-Or if you want better security, limit connections to just your local IP address:
+Or if you want better security, you can limit connections to just your local IP address:
 
 ```
 ufw allow from <yourlocalipaddress> to any port 22 proto tcp
@@ -46,9 +46,9 @@ ufw allow from <yourlocalipaddress> to any port 3389 proto tcp
 ufw allow from <yourlocalipaddress> to any port 3000 proto tcp
 ```
 
-Allow Ports 13000/TCP and 12000/UDP:
+Allow Prysm - Allows P2P with peers for communication with the beacon node:
 
-> 13000/TCP and 12000/UDP are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs as incoming P2P connection prerequisites.
+> 13000/TCP and 12000/UDP are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs.
 
 ```
 ufw allow 13000/tcp
