@@ -13,6 +13,15 @@ I'm not an expert in any of the technologies listed in this guide (basically a n
 ## Prerequisites
 This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. Before you get started you will need to have your Ubuntu server instance up and running. For simplicity I used a VM hosted in a virtual public cloud, but a locally hosted instance is also fine. It will help to have the MetaMask browser extension installed and configured. The rest we will do along the way. GLHF!
 
+## Requirements
+- Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
+- MetaMask crypto wallet browser extension, configured.
+- Prysm minimum requirements ([link](https://docs.prylabs.network/docs/install/linux/))
+  - Operating System: 64-bit Linux, Mac OS X 10.14+, Windows
+  - Processor: Intel Core i5–760 or AMD FX-8100 or better
+  - Memory: 4GB RAM
+  - Storage: 20GB available space SSD
+  - Internet: Broadband connection
 
 ## Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, rather just some basic settings: a firewall and a user account. This assumes you have console access to your Ubuntu instance and are logged in as the root user.
@@ -134,4 +143,24 @@ sudo service xrdp restart
 Now you can RDP into the Ubuntu instance using a RDP client.
 
 
-## Step 4 - 
+## Step 4 - Install Prysm
+
+Next we will install the Prysm software which includes a beacon chain and validator. This is done using the Prysm installation script (Prysm.sh). The instructions to do this are on Prysm's website ([link](https://docs.prylabs.network/docs/install/linux/)). I will summarize the steps here. 
+
+> It's also possible to clone and build the sofware yourself using Prysmatic's build tool: Bazel ([link](https://docs.prylabs.network/docs/install/lin/bazel)).
+
+### Pull down the Prysm.sh script and execute the beacon chain
+
+```
+mkdir prysm && cd prysm
+curl https://raw.githubusercontent.com/prysmaticlabs/prysm/master/prysm.sh --output prysm.sh && chmod +x prysm.sh
+```
+
+Execute the beacon chain. Use the --p2p-host-ip parameter to specify your public IP.
+
+> From Prysmatic Labs: "The beacon node needs to know what your public IP address is so that it can inform other peers how to reach your node. Do this by including the --p2p-host-ip=<your public IP> flag when you start up the beacon-chain."
+
+```
+prysm.sh beacon-chain --p2p-host-ip=$(curl -s v4.ident.me)
+```
+
