@@ -26,16 +26,16 @@ Allow SSH - Allows connection to the server over SSH (port 22/TCP).
 ufw allow 22/tcp
 ```
 
-Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
-
-```
-ufw allow 3389/tcp
-```
-
 Allow Grafana - Allows incoming requests to the Grafana web server (port 3000/TCP):
 
 ```
 ufw allow 3000/tcp
+```
+
+Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
+
+```
+ufw allow 3389/tcp
 ```
 
 Or if you want better security you can limit connections to just your local IP address:
@@ -75,6 +75,7 @@ Status: Active
      To                   Action      From
      --                   ------      ----
 [ 1] 22/tcp               ALLOW IN    Anywhere
+[ 3] 3000/tcp             ALLOW IN    Anywhere
 [ 2] 3389/tcp             ALLOW IN    Anywhere
 [ 3] 13000/tcp            ALLOW IN    Anywhere
 [ 4] 12000/udp            ALLOW IN    Anywhere
