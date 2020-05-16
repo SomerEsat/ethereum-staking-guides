@@ -13,7 +13,7 @@ I'm not an expert in any of the technologies listed in this guide (basically a n
 ### Prerequisites
 This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. Before you get started you will need to have your Ubuntu server instance up and running. For simplicity I used a VM hosted in a virtual public cloud, but a locally hosted instance is also fine. It will help to have the MetaMask browser extension installed and configured. The rest we will do along the way. GLHF!
 
-### [Step 1 - Secure Your System](#Step-1-secure-your-system)
+### Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, just some basic settings.
 
 > Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. Start by logging in as root then create a new user. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
