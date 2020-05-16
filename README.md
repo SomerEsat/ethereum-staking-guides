@@ -22,7 +22,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
   - Memory: 4GB RAM
   - Storage: 20GB available space SSD
   - Internet: Broadband connection
-
+#
 ## Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, rather just some basic settings: a firewall and a user account. This assumes you have console access to your Ubuntu instance and are logged in as the root user.
 
@@ -109,7 +109,7 @@ usermod -aG sudo <yourusername>
 
 When you log in as ```<yourusername>``` you can type sudo before commands to perform actions with superuser privileges.
 
-
+#
 ## Step 2 - Update Your System
 
 SSH into your Ubuntu instance with your newly created username and apply the following commands to update the system.
@@ -119,6 +119,7 @@ sudo apt update && sudo apt upgrade
 sudo apt dist-upgrade && sudo apt autoremove
 ```
 
+#
 ## Step 3 - Install a lightweight GUI for RDP
 
 This step is questionable. The Prysm beacon and validator services could be run as background services on startup so you don't have to manually start them. However, the validator requires a password, and I'm not sure how to store it in a secure way. Probably via an [ethdo wallet](https://docs.prylabs.network/docs/prysm-usage/wallet-keymanager/).
@@ -142,7 +143,7 @@ sudo service xrdp restart
 
 Now you can RDP into the Ubuntu instance using a RDP client.
 
-
+#
 ## Step 4 - Install Prysm
 
 Next we will install the Prysm software which includes a beacon chain and validator. This is done using the Prysm installation script (Prysm.sh). The instructions to do this are on Prysm's [website](https://docs.prylabs.network/docs/install/linux/), and I will summarize the steps here.
@@ -172,7 +173,7 @@ The beacon-chain binary will begin to initialise the beacon chain. It may take s
 
 While the beacon node is syncing, let's move onto the next steps. 
 
-
+#
 ## Step 5 - Configure validator staking keys
 
 *Your beacon node does not have to be synced to do these steps.*
@@ -245,5 +246,5 @@ You can provide a different value (TODO(SE): LINK), or go with the default keyst
 
 7. Repeat steps 1-6 in this guide for every validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit.
 
-
+#
 ## Step 6 - Begin validating (and earning ETH!)
