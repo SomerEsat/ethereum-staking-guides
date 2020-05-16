@@ -52,9 +52,6 @@ Allow Prysm - Allows P2P with peers for communication with the beacon node:
 
 ```
 ufw allow 13000/tcp
-```
-
-```
 ufw allow 12000/udp
 ```
 
