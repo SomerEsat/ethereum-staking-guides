@@ -7,16 +7,16 @@ This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the fo
 - Prometheus metrics ([link](https://prometheus.io/))
 - Grafana dashboard ([link](https://grafana.com/))
 
-### Disclaimer
+## Disclaimer
 I'm not an expert in any of the technologies listed in this guide (basically a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
 
-### Prerequisites
+## Prerequisites
 This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. Before you get started you will need to have your Ubuntu server instance up and running. For simplicity I used a VM hosted in a virtual public cloud, but a locally hosted instance is also fine. It will help to have the MetaMask browser extension installed and configured. The rest we will do along the way. GLHF!
 
-### Step 1 - Secure Your System
+## Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, just some basic settings: a firewall and a user account. This assumed you have console access to your Ubuntu instance, logged in as the root user.
 
-#### Configure a firewall
+### Configure a firewall
 
 Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, TCP port 13000, and UDP port 12000 to connect to the server.
 
@@ -75,7 +75,7 @@ Status: Active
 [ 4] 12000/udp            ALLOW IN    Anywhere
 ```
 
-#### Create a new user and grant administrative privileges
+### Create a new user and grant administrative privileges
 
 > Using the root user to log in is [risky](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root). Instead, create a user-level account. Start by logging in as root then create a new user. You can use a [terminal](https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal) to enter these commands.
 
