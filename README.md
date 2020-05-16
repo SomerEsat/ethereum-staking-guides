@@ -16,7 +16,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 ## Requirements
 - Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
 - MetaMask crypto wallet browser extension, configured.
-- Prysm minimum requirements ([link](https://docs.prylabs.network/docs/install/linux/)):
+- Prysm ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
   - Operating System: 64-bit Linux, Mac OS X 10.14+, Windows
   - Processor: Intel Core i5–760 or AMD FX-8100 or better
   - Memory: 4GB RAM
@@ -121,11 +121,11 @@ sudo apt dist-upgrade && sudo apt autoremove
 
 ## Step 3 - Install a lightweight GUI for RDP
 
-This step is questionable. The Prysm beacon and validator services could be run as background services on startup so you don't have to manually start them. However, the validator requires a password, and I'm not sure how to store it in a secure way. Probably via an ethdo wallet ([link](https://docs.prylabs.network/docs/prysm-usage/wallet-keymanager/)).
+This step is questionable. The Prysm beacon and validator services could be run as background services on startup so you don't have to manually start them. However, the validator requires a password, and I'm not sure how to store it in a secure way. Probably via an ([ethdo wallet](https://docs.prylabs.network/docs/prysm-usage/wallet-keymanager/)).
 
-> TODO(SE): I will revisit this step once I figure it out.
+> TODO(SE): Revisit this step once I figure it out.
 
-The following will install a lightweight GUI onto the Ubuntu server called xfce ([link](https://www.xfce.org/)). If it gives you the option during setup, select ```lightdm```.
+The following will install a lightweight GUI onto the Ubuntu server called ([xfce](https://www.xfce.org/)). If it gives you the option during setup, select ```lightdm```.
 
 ```
 sudo apt-get -y install xfce4 
@@ -145,9 +145,9 @@ Now you can RDP into the Ubuntu instance using a RDP client.
 
 ## Step 4 - Install Prysm
 
-Next we will install the Prysm software which includes a beacon chain and validator. This is done using the Prysm installation script (Prysm.sh). The instructions to do this are on Prysm's website ([link](https://docs.prylabs.network/docs/install/linux/)). I will summarize the steps here. 
+Next we will install the Prysm software which includes a beacon chain and validator. This is done using the Prysm installation script (Prysm.sh). The instructions to do this are on Prysm's ([website](https://docs.prylabs.network/docs/install/linux/)). I will summarize the steps here. 
 
-> It's also possible to clone and build the sofware yourself using Prysmatic's build tool: Bazel ([link](https://docs.prylabs.network/docs/install/lin/bazel)).
+> It's also possible to clone and build the sofware yourself using Prysmatic's build tool, ([Bazel](https://docs.prylabs.network/docs/install/lin/bazel)).
 
 ### Pull down the Prysm.sh script and execute the beacon chain
 
