@@ -173,7 +173,7 @@ The beacon-chain binary will begin to initialise the beacon chain. It may take s
 While the beacon node is syncing, let's move onto the next steps. 
 
 
-## Step 5 - Configure staking and execute the validator
+## Step 5 - Configure validator staking keys
 
 *Your beacon node does not have to be synced to do these steps.*
 
@@ -241,9 +241,9 @@ You can provide a different value (TODO(SE): LINK), or go with the default keyst
 
 5. Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading `Your validator depost data` at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
-6. Ignore `Step 4` and click on `Step 5` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page. Click on the `Make deposit` button.
-  
+6. Ignore `Step 4` and click on `Step 5` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the `Confirm` button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: `Transaction Confirmed. You are deposited`.
 
-Each key corresponds to a 32 ETH deposit. 
+7. Repeat steps 1-6 in this guide for every validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit.
 
-2. 
+
+## Step 6 - Begin validating (and earning ETH!)
