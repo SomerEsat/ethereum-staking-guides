@@ -20,11 +20,9 @@ Security is important. This is not a comprehensive security guide, just some bas
 
 Ubuntu 20.04 servers can use the default [UFW firewall](https://help.ubuntu.com/community/UFW) to restrict traffic to the server. We need to allow SSH, RDP, TCP port 13000, and UDP port 12000 to connect to the server.
 
-> 13000/TCP and 12000/UDP are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs as incoming P2P connection prerequisites.
+Allow SSH - Allows connection to the server over SSH (port 22/TCP).
 
-Allow OpenSSH - Allows connection to the server over SSH (port 22). This should already be allowed, but just to make sure:
-
-```ufw allow OpenSSH```
+```ufw allow 22/tcp```
 
 Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
 
@@ -35,6 +33,8 @@ Or if you want better security, limit connections to just your local IP address:
 ```ufw allow from <yourlocalipaddress> to any port 3389 proto tcp```
 
 Allow Ports 13000/TCP and 12000/UDP:
+
+> 13000/TCP and 12000/UDP are [recommended](https://docs.prylabs.network/docs/prysm-usage/p2p-host-ip/#incoming-p2p-connection-prerequisites) by Prysmatic Labs as incoming P2P connection prerequisites.
 
 ```ufw allow 13000/tcp```
 
