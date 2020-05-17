@@ -1,4 +1,6 @@
 # Ethereum 2.0 Staking Guide (Ubuntu / Prysm / Topaz)
+<br>
+
 This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the following technologies:
 - Ubuntu v20.04 (LTS) x64 server ([link](https://ubuntu.com/))
 - Prysmatic Labs Ethereum 2.0 client - Prysm ([link](https://prysmaticlabs.com/))
@@ -6,19 +8,19 @@ This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the fo
 - MetaMask crypto wallet browser extension ([link](https://metamask.io/))
 - Prometheus metrics ([link](https://prometheus.io/))
 - Grafana dashboard ([link](https://grafana.com/))
-
+  
 This guide also includes instructions for exposing validator and instance metrics via Prometheus and creating a Grafana dashboard to view them.
 
-## Acknowledgements
+### Acknowledgements
 The majority of this guide is based on documentation from other soruces. These are listed at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
 
-## Disclaimer
+### Disclaimer
 I'm not an expert in any of the technologies listed in this guide (basically I am a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
 
-## Prerequisites
+### Prerequisites
 This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. Before you get started you will need to have your Ubuntu server instance up and running. For simplicity I used a VM hosted in a virtual public cloud, but a locally hosted instance is also fine. It will help to have the MetaMask browser extension installed and configured. The rest we will do along the way. GLHF!
 
-## Requirements
+### Requirements
 - Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
 - MetaMask crypto wallet browser extension, configured.
 - Prysm softare ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
@@ -27,7 +29,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
   - Memory: 4GB RAM
   - Storage: 20GB available space SSD
   - Internet: Broadband connection
-
+<br>
 
 ## Step 1 - Secure Your System
 Security is important. This is not a comprehensive security guide, rather just some basic settings: a firewall and a user account. This assumes you have console access to your Ubuntu instance and are logged in as the root user.
@@ -114,6 +116,7 @@ usermod -aG sudo <yourusername>
 ```
 
 When you log in as ```<yourusername>``` you can type sudo before commands to perform actions with superuser privileges.
+<br>
 
 
 ## Step 2 - Update Your System
@@ -124,6 +127,7 @@ SSH into your Ubuntu instance with your newly created username and apply the fol
 sudo apt update && sudo apt upgrade
 sudo apt dist-upgrade && sudo apt autoremove
 ```
+<br>
 
 
 ## Step 3 - Install a lightweight GUI for RDP
@@ -148,6 +152,7 @@ sudo service xrdp restart
 ```
 
 Now you can RDP into the Ubuntu instance using a RDP client.
+<br>
 
 
 ## Step 4 - Install Prysm
@@ -179,6 +184,7 @@ The beacon-chain binary will begin to initialise the beacon chain. It may take s
 > "NOTICE: The beacon node you are using should be completely synced before submitting your deposit for the validator client, otherwise the validator will not be able to validate and will inflict minor inactivity balance penalties."
 
 While the beacon node is syncing, let's move onto the next steps. 
+<br>
 
 
 ## Step 5 - Configure validator staking keys
@@ -261,6 +267,7 @@ e. Copy the Raw Transaction Data without the header and footer and paste it into
 f. Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
 
 g. Repeat steps a through g in this section for each validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
+<br>
 
 
 ## Step 6 - Begin validating (and earning testnet ETH!)
@@ -280,6 +287,7 @@ The `--enable-account-metrics` parameter is an important addtion that will allow
 The validator can take more than 12 hours to activate the validation key(s). The output from the validator process indicates the status. Once activated you should see something like this for each key: 
 
 `[2020-05-17 18:18:47]  INFO validator: Validator activated pubKey=0xaef319a5d9c4`
+<br>
 
 
 ## Step 7 - Install Prometheus
