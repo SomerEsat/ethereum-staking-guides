@@ -216,7 +216,7 @@ To deposit as a validator you'll need at least 32.0 GöETH.
 
 If you have >= 32 ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send ETH to the deposit contact. Follow these steps:
 
-1. In a new terminal window run this command:
+a. In a new terminal window run this command:
 
    ```
    cd prysm/
@@ -225,42 +225,42 @@ If you have >= 32 ETH the page will allow you to click on `Step 3`. This is wher
 
    A validator binary will be downloaded and executed. 
 
-2. It will propt you to specify the keystore where your validator keys will be stored. 
+b. It will propt you to specify the keystore where your validator keys will be stored. 
 
-  ```
-  INFO accounts: Please specify the keystore path for your private keys (default: "/root/.eth2validators"):
-  ```
-  You can provide a different value (TODO(SE): LINK), or go with the default keystore by pressing <enter>.
+   ```
+   INFO accounts: Please specify the keystore path for your private keys (default: "/root/.eth2validators"):
+   ```
+   You can provide a different value (TODO(SE): LINK), or go with the default keystore by pressing <enter>.
 
-3. Next it will ask you for a password. This is the password for your key. **You will need to specify this key each time you run the validator binary*** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you create. This will likely change by the time we go to production.
+c. Next it will ask you for a password. This is the password for your key. **You will need to specify this key each time you run the validator binary*** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you create. This will likely change by the time we go to production.
 
-  ```
-  INFO accounts: Account creation complete! Copy and paste the raw transaction data shown below 
-  when issuing a transaction into the ETH1.0 deposit contract to activate your validator client
+   ```
+   INFO accounts: Account creation complete! Copy and paste the raw transaction data shown below 
+   when issuing a transaction into the ETH1.0 deposit contract to activate your validator client
 
-  ========================Raw Transaction Data=======================
+   ========================Raw Transaction Data=======================
 
-  0x228951180000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000
-  00000000000000000000e000000000000000000000000000000000000000000000000000000000000001206617145a28456c7f0670d52cffbad3
-  d3baad15e1df92f1f1ecdf0c493080c9150000000000000000000000000000000000000000000000000000000000000030aef319a5d9c4ae04a7
-  5e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290000000000000000000000000000000000000000
-  000000000000000000000000000000000000000000000000000000020009a3665a747517ea6df3a95eb81d3047a496c505dc9eba79471fccd9704
-  49270000000000000000000000000000000000000000000000000000000000000060ab767dbd67471ffabfab8096c5b6cc4d998017be9feed0826
-  13a3ea3465014c1660f7862ef26b90462980668b4cff21c189b41dbde0cb15b621c3d12fc4a4c67e288ab8c0b42e36463ff432005829ced527458
-  926a6d9a1e2d252438ceb5a25e
+   0x228951180000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000
+   00000000000000000000e000000000000000000000000000000000000000000000000000000000000001206617145a28456c7f0670d52cffbad3
+   d3baad15e1df92f1f1ecdf0c493080c9150000000000000000000000000000000000000000000000000000000000000030aef319a5d9c4ae04a7
+   5e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290000000000000000000000000000000000000000
+   000000000000000000000000000000000000000000000000000000020009a3665a747517ea6df3a95eb81d3047a496c505dc9eba79471fccd9704
+   49270000000000000000000000000000000000000000000000000000000000000060ab767dbd67471ffabfab8096c5b6cc4d998017be9feed0826
+   13a3ea3465014c1660f7862ef26b90462980668b4cff21c189b41dbde0cb15b621c3d12fc4a4c67e288ab8c0b42e36463ff432005829ced527458
+   926a6d9a1e2d252438ceb5a25e
 
-  ===================================================================
-  INFO accounts: Deposit data displayed for public key: 
-  0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
-  ```
+   ===================================================================
+   INFO accounts: Deposit data displayed for public key: 
+   0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
+   ```
 
-4. Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website.
+d. Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website.
 
-5. Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator depost data** at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
+e. Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator depost data** at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
-6. Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
+f. Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
 
-7. Repeat steps 1-6 in this guide for each validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. Use the same password for each key (for now).
+g. Repeat steps a through g in this section for each validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
 
 
 ## Step 6 - Begin validating (and earning testnet ETH!)
