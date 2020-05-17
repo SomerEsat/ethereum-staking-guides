@@ -275,7 +275,7 @@ You can provide a different value (TODO(SE): LINK), or to keep things simple go 
 
 #### c) Secure the key data
 
-Next it will ask you for a password. This is the password for your key. **You will need to specify this password each time you run the validator binary*** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you create. This will likely change by the time we go to production. 
+Next it will ask you for a password. This is the password for your key. **You will need to specify this password each time you run the validator binary** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you create. This will likely change by the time we go to production. 
 
 After you enter your password and confirm it you get the following output:
 
