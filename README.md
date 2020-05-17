@@ -570,24 +570,13 @@ Output should look something like this. If you did everything right, it should s
 
 ```
 ● prometheus.service - Prometheus
-     Loaded: loaded (/etc/systemd/system/prometheus.service; disabled; vendor preset: enabled)
-     Active: active (running) since Sun 2020-05-17 22:53:29 UTC; 4s ago
+     Loaded: loaded (/etc/systemd/system/prometheus.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2020-05-17 22:53:29 UTC; 31min ago
    Main PID: 32345 (prometheus)
-      Tasks: 9 (limit: 9513)
-     Memory: 17.3M
+      Tasks: 10 (limit: 9513)
+     Memory: 24.1M
      CGroup: /system.slice/prometheus.service
-             └─32345 /usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/li>
-
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.334Z caller=web.go:523 component=we>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.344Z caller=head.go:575 component=t>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.351Z caller=head.go:624 component=t>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.353Z caller=head.go:624 component=t>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.353Z caller=head.go:627 component=t>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.356Z caller=main.go:694 fs_type=EXT>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.356Z caller=main.go:695 msg="TSDB s>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.356Z caller=main.go:799 msg="Loadin>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.358Z caller=main.go:827 msg="Comple>
-May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.358Z caller=main.go:646 msg="Server>
+             └─32345 /usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus/ --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries
 lines 1-19/19 (END)                                                                                                     
 ```
 
@@ -672,7 +661,14 @@ sudo systemctl status node_exporter
 Output should look something like this. If you did everything right, it should say **Active: active (running)**. If not then go back and repeat the steps to fix the problem. Press Q to quit.
 
 ```
-
+● node_exporter.service - Node Exporter
+     Loaded: loaded (/etc/systemd/system/node_exporter.service; disabled; vendor preset: enabled)
+     Active: active (running) since Sun 2020-05-17 23:24:04 UTC; 5s ago
+   Main PID: 33035 (node_exporter)
+      Tasks: 6 (limit: 9513)
+     Memory: 5.1M
+     CGroup: /system.slice/node_exporter.service
+             └─33035 /usr/local/bin/node_exporter
 ```
 
 Enable Node Exporter to start on boot.
