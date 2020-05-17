@@ -479,7 +479,7 @@ scrape_configs:
       - targets: ['localhost:9100']
 ```
 
-The **scrape_configs** define the output target for the different job names. We have 3 job names: validator, beacon node, and node_exporter. The first two are obvious, the last one is for metrics related to the server instance itself (memory, CPU, disk, network etc.).
+The **scrape_configs** define the output target for the different job names. We have 3 job names: validator, beacon node, and node_exporter. The first two are obvious, the last one is for metrics related to the server instance itself (memory, CPU, disk, network etc.). We will install and configure node_exporter below.
 
 Set ownership for the config file. The prometheus account will own this.
 
@@ -604,7 +604,7 @@ tar xvf node_exporter-1.0.0-rc.1.linux-amd64.tar.gz
 Copy the binary to the /usr/local/bin directory and set the user and group ownership to the node_exporter user we created above.
 
 ```
-# sudo cp node_exporter-1.0.0-rc.1.linux-amd64/node_exporter /usr/local/bin
+sudo cp node_exporter-1.0.0-rc.1.linux-amd64/node_exporter /usr/local/bin
 sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 ```
 
@@ -677,9 +677,60 @@ Enable Node Exporter to start on boot.
 sudo systemctl enable node_exporter
 ```
 
+### Test prometheus and node_exporter
+
+Everything should be ready to go. You may test the functionality by running a browser on your instance and navigating to [http://localhost:9090]. From there you can run queries to view different metrics. For eample try this query to see how much memory is free in bytes:
+
+```
+http://localhost:9090/new/graph?g0.expr=node_memory_MemFree_bytes&g0.tab=1&g0.stacked=0&g0.range_input=1h
+```
+
+Or try this query to see the balance for all of your validators:
+
+```
+http://localhost:9090/graph?g0.range_input=1h&g0.expr=validator_balance&g0.tab=1
+```
+
+> If you would rather not do this via RDP, open up port 9090 and you can hit the endpoint remotely.
+
 <br>
 
 ## Step 8 - Install Grafana
 
 While Prometheus is our datasource, Grafana is going provide our reporting dashboard capability. Let's install it and configure a dashboard.
 
+```
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+```
+
+Add the Grafana repository to the APT sources.
+
+```
+sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+```
+
+Refresh the apt cache
+
+```
+sudo apt update
+```
+
+Make sure Grafana is installed from the repository.
+
+```
+apt-cache policy grafana
+```
+
+Output looks like this:
+
+```
+grafana:
+  Installed: (none)
+  Candidate: 6.3.3
+  Version table:
+     6.3.3 500
+        500 https://packages.grafana.com/oss/deb stable/main amd64 Packages
+...
+```
+
+Verify the version matches the latest version shown [here](https://packages.grafana.com/oss/deb).
