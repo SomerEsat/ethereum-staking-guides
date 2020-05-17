@@ -232,13 +232,13 @@ e) Ask one of the mods nicely to transfer you some ETH and paste your Goerli ETH
 
 f) If you are planning on running multiple validators ask for what you need (32 x number of validators).
 
-Once the ETH appears in your MetaMask wallet move to the next step.
+Once the ETH appears in your MetaMask wallet we are ready to continue to the next step.
 
-### Generate validator keys 
+### Connect your MetaMask wallet
 
-As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet despoit contract. To do this go to the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
+As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet despoit contract. To do this you can send the Göerli ETH to the Topaz Testnet deposit contact with your validator key data attached, or you can use the Prysm Labs validator participation web page. Let's do that. Go to [Prysm Labs Testnet Particpation](https://prylabs.net/participate).
 
-Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary) and click `Connect`. The web page should then display confirmation that you have sufficient ETH in your wallet to stake:
+Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary) and click `Connect`. The web page should then display confirmation that you have sufficient Göerli ETH in your wallet to stake:
 
 ```
 This test network leverages the Goerli test network to simulate validator deposits on a proof-of-work chain.
@@ -248,7 +248,7 @@ You are 0x724F321C4efeD5e3C7CcA40168810c258c82d02F and you have 631 GöETH.
 To deposit as a validator you'll need at least 32.0 GöETH.
 ```
 
-### Deposit staking ETH
+### Generate validator keys
 
 If you have >= 32 Göerli ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send Göerli ETH to the deposit contact. Let's get started.
 
@@ -277,7 +277,7 @@ You can provide a different value (TODO(SE): LINK), or to keep things simple go 
 
 Next it will ask you for a password. This is the password for your key. **You will need to specify this password each time you run the validator binary** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you create. This will likely change by the time we go to production. 
 
-After you enter your password and confirm it you get the following output:
+After you enter your password and confirm it you should get the following output:
 
 ```
 INFO accounts: Account creation complete! Copy and paste the raw transaction data shown below 
@@ -299,13 +299,15 @@ INFO accounts: Deposit data displayed for public key:
 0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
 ```
 
-Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website.
+Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website, for example.
 
 #### d) Make the deposit
 
 Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator depost data** at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
 Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
+
+> Sometimes the Prysm web page locks up after you submit. It's not a major problem - the main thing to verify is that your deposit is confimred as sucessful in Etherscan.
 
 Repeat steps **a** through **d** in this section for each validator key you would like to create. 
 
@@ -338,6 +340,8 @@ The validator can take more than 12 hours to activate the validation key(s). The
 <br>
 
 ## Step 7 - Install Prometheus
+
+*Your beacon node does not have to be synced to do these steps.*
 
 Prometheus is an open-source systems monitoring and alerting toolkit. It runs as a service on your Ubuntu server and its job is to caputre metrics. More information [here](https://prometheus.io/docs/introduction/overview/).
 
