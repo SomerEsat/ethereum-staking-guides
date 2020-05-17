@@ -343,13 +343,13 @@ The validator can take more than 12 hours to activate the validation key(s). The
 
 *Your beacon node does not have to be synced to do these steps.*
 
-Prometheus is an open-source systems monitoring and alerting toolkit. It runs as a service on your Ubuntu server and its job is to caputre metrics. More information [here](https://prometheus.io/docs/introduction/overview/).
+Prometheus is an open-source systems monitoring and alerting toolkit. It runs as a service on your Ubuntu server and its job is to capture metrics. More information [here](https://prometheus.io/docs/introduction/overview/).
 
 We are going to use Prometheus to expose runtime data from the beacon-chain and validator as well as instance specific metrics.
 
 ### Create user accounts
 
-These accounts can't log into the server.
+Accounts for the services to run under. These accounts can't log into the server.
 
 ```
 cd ~
