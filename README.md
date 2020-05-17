@@ -603,26 +603,26 @@ Prometheus will proivde metrics about the beacon chain and validators. If we wan
 
 ```
 cd ~
-curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.0.0-rc.1/node_exporter-1.0.0-rc.1.linux-amd64.tar.gz
 ```
 
 Unpack the downloaded software.
 
 ```
-tar xvf node_exporter-0.15.1.linux-amd64.tar.gz
+tar xvf node_exporter-1.0.0-rc.1.linux-amd64.tar.gz
 ```
 
 Copy the binary to the /usr/local/bin directory and set the user and group ownership to the node_exporter user we created above.
 
 ```
-# sudo cp node_exporter-0.15.1.linux-amd64/node_exporter /usr/local/bin
+# sudo cp node_exporter-1.0.0-rc.1.linux-amd64/node_exporter /usr/local/bin
 sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 ```
 
 Remove the downloaded archive.
 
 ```
-rm -rf node_exporter-0.15.1.linux-amd64.tar.gz node_exporter-0.15.1.linux-amd64
+rm -rf node_exporter-1.0.0-rc.1.linux-amd64.tar.gz node_exporter-1.0.0-rc.1.linux-amd64
 ```
 
 ### Set Node Exporter to autostart as a service
