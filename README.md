@@ -369,7 +369,7 @@ Open the YAML config file for editing.
 sudo nano /etc/prometheus/prometheus.yml
 ```
 
-Paste the following into the file taking care not to make any additional edits.
+Paste the following into the file taking care not to make any additional edits and exit and save the file.
 
 ```
 global:
@@ -418,4 +418,28 @@ scrape_configs:
       - targets: ['localhost:8081']
 
   - job_name: 'beacon node'
+
+    scrape_interval: 5s
+
+    static_configs:
+
+      - targets: ['localhost:8080']
+
+  - job_name: 'node_exporter'
+
+    scrape_interval: 5s
+
+    static_configs:
+
+      - targets: ['localhost:9100']
 ```
+
+The **scrape_configs** define the output target for the different job names. We have 3 job names: validator, beacon node, and node_exporter. The first two are obvious, the last one is for metrics related to the server instance itself (memory, CPU, disk, network etc.).
+
+Set ownership for the config file. The prometheus account will own this.
+
+```
+sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
+```
+
+### 
