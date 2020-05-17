@@ -265,7 +265,7 @@ If you have >= 32 ETH the page will allow you to click on `Step 3`. This is wher
 
 ## Step 6 - Begin validating (and earning testnet ETH!)
 
-*Your beacon node should be **fully synced** before continuing with these steps.*
+*Your beacon node should be **fully synced** before continuing with this step.*
 
 ### Run the validator
 
@@ -276,6 +276,10 @@ It will prompt you for your password - this is the password you supplied in the 
 ```
 
 The `--enable-account-metrics` parameter is an important addtion that will allow us to expose metrics on the validator and the validations that it does. More about that in the next step.
+
+The validator can take more than 12 hours to activate the validation key(s). The output from the validator process indicates the status. Once activated you should see something like this for each key: 
+
+`[2020-05-17 18:18:47]  INFO validator: Validator activated pubKey=0xaef319a5d9c4`
 
 
 ## Step 7 - Install Prometheus
