@@ -218,12 +218,12 @@ If you have >= 32 ETH the page will allow you to click on `Step 3`. This is wher
 
 1. In a new terminal window run this command:
 
-  ```
-  cd prysm/
-  ./prysm.sh validator accounts create
-  ```
+   ```
+   cd prysm/
+   ./prysm.sh validator accounts create
+   ```
 
-  A validator binary will be downloaded and executed. 
+   A validator binary will be downloaded and executed. 
 
 2. It will propt you to specify the keystore where your validator keys will be stored. 
 
@@ -457,4 +457,54 @@ level=info ts=2020-05-17T18:31:33.052Z caller=main.go:827 msg="Completed loading
 level=info ts=2020-05-17T18:31:33.052Z caller=main.go:646 msg="Server is ready to receive web requests."
 ```
 
-### 
+### Set Prometheus to autostart as a service
+
+Create a systemd service file to store the service config which tells systemd to run Prometheus as the prometheus user, with the configuration file located in the /etc/prometheus/prometheus.yml directory, and to store its data in the /var/lib/prometheus directory.
+
+```
+sudo nano /etc/systemd/system/prometheus.service
+```
+
+Paste the following into the file. Exit and save.
+
+```
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Reload systemd to relfect the changes.
+
+```
+sudo systemctl daemon-reload
+```
+
+And then start the service with the follwoing command.
+
+```
+sudo systemctl start prometheus
+```
+
+Check the status to make sure it's running correctly.
+
+```
+sudo systemctl status prometheus
+```
+
+Output should look something like this. Press Q to quit.
+
+```
