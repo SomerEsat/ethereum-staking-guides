@@ -23,7 +23,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 
 ### Requirements
 - Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
-- MetaMask crypto wallet browser extension, configured.
+- MetaMask crypto wallet browser extension, installed and configured.
 - Prysm softare ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
   - Operating System: 64-bit Linux, Mac OS X 10.14+, Windows
   - Processor: Intel Core i5–760 or AMD FX-8100 or better
@@ -218,9 +218,9 @@ The validator allows you to define one or more validator keys. Each key will nee
 
 ### Get staking ETH
 
-To become a validator on the Topaz testnet you will need to get 32 ETH from the Göerli Test Network. 
+To become a validator on the Topaz testnet you will need to get 32 ETH from the Göerli Test Network. Follow these steps:
 
-a) Click on the MetaMask extension and log in.
+a) Click on the MetaMask browser extension and log in.
 
 b) Using the dropdown at the top, select the Goerli Test Network.
 
@@ -228,7 +228,7 @@ c) Cick on your name to copy your Goerli ETH wallet address.
 
 d) Head over to the [Prysm Labs Discord](https://discord.gg/YMVYzv6).
 
-e) Ask one of the mods nicely to transfer you some ETH and paste your address. 
+e) Ask one of the mods nicely to transfer you some ETH and paste your Goerli ETH wallet address. 
 
 f) If you are planning on running multiple validators ask for what you need (32 x number of validators).
 
