@@ -569,3 +569,24 @@ sudo systemctl status prometheus
 Output should look something like this. Press Q to quit.
 
 ```
+● prometheus.service - Prometheus
+     Loaded: loaded (/etc/systemd/system/prometheus.service; disabled; vendor preset: enabled)
+     Active: active (running) since Sun 2020-05-17 22:53:29 UTC; 4s ago
+   Main PID: 32345 (prometheus)
+      Tasks: 9 (limit: 9513)
+     Memory: 17.3M
+     CGroup: /system.slice/prometheus.service
+             └─32345 /usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/li>
+
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.334Z caller=web.go:523 component=we>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.344Z caller=head.go:575 component=t>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.351Z caller=head.go:624 component=t>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.353Z caller=head.go:624 component=t>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.353Z caller=head.go:627 component=t>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.356Z caller=main.go:694 fs_type=EXT>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.356Z caller=main.go:695 msg="TSDB s>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.356Z caller=main.go:799 msg="Loadin>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.358Z caller=main.go:827 msg="Comple>
+May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.358Z caller=main.go:646 msg="Server>
+lines 1-19/19 (END)                                                                                                     
+```
