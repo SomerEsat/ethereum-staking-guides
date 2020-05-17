@@ -221,10 +221,15 @@ The validator allows you to define one or more validator keys. Each key will nee
 To become a validator on the Topaz testnet you will need to get 32 ETH from the Göerli Test Network. 
 
 a) Click on the MetaMask extension and log in.
+
 b) Using the dropdown at the top, select the Goerli Test Network.
+
 c) Cick on your name to copy your Goerli ETH wallet address.
+
 d) Head over to the [Prysm Labs Discord](https://discord.gg/YMVYzv6).
+
 e) Ask one of the mods nicely to transfer you some ETH and paste your address. 
+
 f) If you are planning on running multiple validators ask for what you need (32 x number of validators).
 
 Once the ETH appears in your MetaMask wallet move to the next step.
