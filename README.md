@@ -161,7 +161,7 @@ Now you can RDP into the Ubuntu instance using a RDP client.
 
 Next we will install the Prysm software which includes a beacon chain and validator. This is done using the Prysm installation script (Prysm.sh). The instructions to do this are on Prysm's [website](https://docs.prylabs.network/docs/install/linux/), and I will summarize the steps here.
 
-> It's also possible to clone and build the software yourself using Prysmatic's build tool, [Bazel](https://docs.prylabs.network/docs/install/lin/bazel).
+> It's also possible to build the software yourself using Prysmatic's build tool, [Bazel](https://docs.prylabs.network/docs/install/lin/bazel).
 
 ### Pull down the Prysm.sh script and execute the beacon chain
 
