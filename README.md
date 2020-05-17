@@ -181,7 +181,28 @@ Use the --p2p-host-ip parameter to specify your public IP. From Prysmatic Labs:
 
 > "The beacon node needs to know what your public IP address is so that it can inform other peers how to reach your node. Do this by including the --p2p-host-ip=<your public IP> flag when you start up the beacon-chain."
 
-The beacon-chain binary will begin to initialise the beacon chain. It may take several hours for the node to fully sync. The teminal output gives status information and an estimate for time remaining. Prysmatic Labs recommends that you wait for this to complete before you run the validator:
+The first thing it does is process deposits. The output looks like this:
+
+```
+[2020-05-17 21:49:52]  INFO powchain: Processing deposits from Ethereum 1 chain deposits=8192
+[2020-05-17 21:49:55]  INFO powchain: Processing deposits from Ethereum 1 chain deposits=8704
+```
+
+Once that is done, it will wait for suitable peers. The output looks like this:
+
+```
+[2020-05-17 21:52:20]  INFO initial-sync: Waiting for enough suitable peers before syncing required=3 suitable=2
+[2020-05-17 21:52:25]  INFO initial-sync: Waiting for enough suitable peers before syncing required=3 suitable=2
+```
+
+And then once it has found and connected to the necessary number of peers, it begins the sync process. The output looks like this:
+
+```
+[2020-05-17 21:53:02]  INFO initial-sync: Processing block 0xc7c761d3... 532/215365 - estimated time remaining 2h31m23s blocksPerSecond=23.6 peers=12
+[2020-05-17 21:53:02]  INFO initial-sync: Processing block 0xf0a3de3a... 533/215365 - estimated time remaining 2h31m4s blocksPerSecond=23.7 peers=12
+```
+
+The beacon-chain binary will begin to sync the beacon chain. It may take several hours for the node to fully sync. The teminal output gives status information and an estimate for time remaining. Prysmatic Labs recommends that you wait for this to complete before you run the validator:
 
 > "NOTICE: The beacon node you are using should be completely synced before submitting your deposit for the validator client, otherwise the validator will not be able to validate and will inflict minor inactivity balance penalties."
 
