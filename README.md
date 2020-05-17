@@ -375,7 +375,7 @@ sudo chown prometheus:prometheus /var/lib/prometheus
 
 ### Download Prometheus software
 
-Adjust the version based on the version you want from the [Prometheus download page](https://prometheus.io/download/).
+Adjust the version number for the version you want from the [Prometheus download page](https://prometheus.io/download/).
 
 ```
 cd ~
