@@ -7,8 +7,10 @@ This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the fo
 - Prometheus metrics ([link](https://prometheus.io/))
 - Grafana dashboard ([link](https://grafana.com/))
 
+This guide also includes instructions for exposing validator and instance metrics via Prometheus and creating a Grafana dashboard to view them.
+
 ## Disclaimer
-I'm not an expert in any of the technologies listed in this guide (basically a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
+I'm not an expert in any of the technologies listed in this guide (basically I am a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
 
 ## Prerequisites
 This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. Before you get started you will need to have your Ubuntu server instance up and running. For simplicity I used a VM hosted in a virtual public cloud, but a locally hosted instance is also fine. It will help to have the MetaMask browser extension installed and configured. The rest we will do along the way. GLHF!
@@ -154,6 +156,7 @@ Next we will install the Prysm software which includes a beacon chain and valida
 ### Pull down the Prysm.sh script and execute the beacon chain
 
 ```
+cd ~
 mkdir prysm && cd prysm
 curl https://raw.githubusercontent.com/prysmaticlabs/prysm/master/prysm.sh --output prysm.sh && chmod +x prysm.sh
 ```
@@ -281,6 +284,7 @@ Prometheus is an open-source systems monitoring and alerting toolkit. It runs as
 These accounts can't log into the server.
 
 ```
+cd ~
 sudo useradd --no-create-home --shell /bin/false prometheus
 sudo useradd --no-create-home --shell /bin/false node_exporter
 ```
@@ -345,7 +349,7 @@ sudo chown -R prometheus:prometheus /etc/prometheus/consoles
 sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
 ```
 
-Remove downloaded archive.
+Remove the downloaded archive.
 
 ```
 rm -rf prometheus-2.18.1.linux-amd64.tar.gz prometheus-2.18.1.linux-amd64
@@ -354,3 +358,61 @@ rm -rf prometheus-2.18.1.linux-amd64.tar.gz prometheus-2.18.1.linux-amd64
 
 ### Edit the configuration file
 
+Prometheus uses a configuration file so it knows where to scarpe the data from. We will set this up here.
+
+Open the YAML config file for editing.
+
+```
+sudo nano /etc/prometheus/prometheus.yml
+```
+
+Paste the following into the file taking care not to make any additional edits.
+
+```
+global:
+
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Defau>
+
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is ev>
+
+  # scrape_timeout is set to the global default (10s).
+
+
+# Alertmanager configuration
+
+alerting:
+
+  alertmanagers:
+
+  - static_configs:
+
+    - targets:
+
+      # - alertmanager:9093
+
+
+# Load rules once and periodically evaluate them according to the global 'evalu>
+
+rule_files:
+
+  # - "first_rules.yml"
+
+  # - "second_rules.yml"
+
+
+# A scrape configuration containing exactly one endpoint to scrape:
+
+# Here it's Prometheus itself.
+
+scrape_configs:
+
+  - job_name: 'validator'
+
+    scrape_interval: 5s
+
+    static_configs:
+
+      - targets: ['localhost:8081']
+
+  - job_name: 'beacon node'
+```
