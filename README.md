@@ -233,17 +233,17 @@ Once the ETH appears in your MetaMask wallet move to the next step.
 
 As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet despoit contract. To do this go to the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
-Click on `Step 2` and log into MetaMask again, if necessary. It should display confirmation that you have sufficient ETH in your wallet to stake:
+Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary). The web page should then display confirmation that you have sufficient ETH in your wallet to stake:
 
 ```
 This test network leverages the Goerli test network to simulate validator deposits on a proof-of-work chain.
 
-You are 0x724F321C4efeD5e3C7CcA40168810c258c82d02F and you have 631.489076513454027025 GöETH.
+You are 0x724F321C4efeD5e3C7CcA40168810c258c82d02F and you have 631 GöETH.
 
 To deposit as a validator you'll need at least 32.0 GöETH.
 ```
 
-If you have >= 32 ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send ETH to the deposit contact. Follow these steps:
+If you have >= 32 ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send ETH to the deposit contact. Let's get started.
 
 a. In a new terminal window run this command:
 
@@ -254,14 +254,19 @@ a. In a new terminal window run this command:
 
    A validator binary will be downloaded and executed. 
 
-b. It will propt you to specify the keystore where your validator keys will be stored. 
+b. It will propt you to specify the keystore path where your validator keys will be stored. 
 
    ```
    INFO accounts: Please specify the keystore path for your private keys (default: "/root/.eth2validators"):
    ```
-   You can provide a different value (TODO(SE): LINK), or go with the default keystore by pressing <enter>.
+   
+   You can provide a different value (TODO(SE): LINK), or to keep things simple go with the default keystore by pressing **\<enter\>**.
 
-c. Next it will ask you for a password. This is the password for your key. **You will need to specify this key each time you run the validator binary*** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you create. This will likely change by the time we go to production.
+c. Next it will ask you for a password. This is the password for your key. **You will need to specify this password each time you run   
+   the validator binary*** so you will want to make a note of it. For now, I *recommend* using the same key for each validator you 
+   create. This will likely change by the time we go to production. 
+
+   After you enter your password and confirm it you get the following output:
 
    ```
    INFO accounts: Account creation complete! Copy and paste the raw transaction data shown below 
@@ -283,13 +288,17 @@ c. Next it will ask you for a password. This is the password for your key. **You
    0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
    ```
 
-d. Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website.
+   Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website.
 
-e. Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator depost data** at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
+d. Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator depost 
+   data** at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
-f. Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
+e. Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the 
+   transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of 
+   the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by 
+   clicking on the small arrow on the confirmed transaction record in MetaMask.
 
-g. Repeat steps a through g in this section for each validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
+Repeat steps a through e in this section for each validator key you would like to create. They will all be stored in the keystore and the validator binary will manage all of the keys for you. Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
 
 <br>
 
