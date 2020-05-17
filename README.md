@@ -9,6 +9,9 @@ This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the fo
 
 This guide also includes instructions for exposing validator and instance metrics via Prometheus and creating a Grafana dashboard to view them.
 
+## Acknowledgements
+The majority of this guide is based on documentation from other soruces. These are listed at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
+
 ## Disclaimer
 I'm not an expert in any of the technologies listed in this guide (basically I am a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
 
@@ -18,7 +21,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 ## Requirements
 - Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
 - MetaMask crypto wallet browser extension, configured.
-- Prysm ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
+- Prysm softare ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
   - Operating System: 64-bit Linux, Mac OS X 10.14+, Windows
   - Processor: Intel Core i5–760 or AMD FX-8100 or better
   - Memory: 4GB RAM
