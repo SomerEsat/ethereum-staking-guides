@@ -377,64 +377,44 @@ Paste the following into the file taking care not to make any additional edits a
 
 ```
 global:
-
-  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Defau>
-
-  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is ev>
-
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds.
   # scrape_timeout is set to the global default (10s).
 
 
-# Alertmanager configuration
+# Alertmanager configuration:
 
 alerting:
-
   alertmanagers:
-
   - static_configs:
-
     - targets:
-
       # - alertmanager:9093
 
 
-# Load rules once and periodically evaluate them according to the global 'evalu>
+# Load rules once and periodically evaluate them:
 
 rule_files:
 
   # - "first_rules.yml"
-
   # - "second_rules.yml"
 
 
-# A scrape configuration containing exactly one endpoint to scrape:
-
-# Here it's Prometheus itself.
+# The scrape configuration:
 
 scrape_configs:
-
   - job_name: 'validator'
-
     scrape_interval: 5s
-
     static_configs:
-
       - targets: ['localhost:8081']
 
   - job_name: 'beacon node'
-
     scrape_interval: 5s
-
     static_configs:
-
       - targets: ['localhost:8080']
 
   - job_name: 'node_exporter'
-
     scrape_interval: 5s
-
     static_configs:
-
       - targets: ['localhost:9100']
 ```
 
@@ -444,6 +424,37 @@ Set ownership for the config file. The prometheus account will own this.
 
 ```
 sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
+```
+
+Finally, let's test the service is running correctly.
+
+```
+sudo -u prometheus /usr/local/bin/prometheus \
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+```
+
+Output should look something like this. Press Ctrl + C to exit.
+
+```
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:302 msg="No time or size retention was set so using the default time retention" duration=15d
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:337 msg="Starting Prometheus" version="(version=2.18.1, branch=HEAD, revision=ecee9c8abfd118f139014cb1b174b08db3f342cf)"
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:338 build_context="(go=go1.14.2, user=root@2117a9e64a7e, date=20200507-16:51:47)"
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:339 host_details="(Linux 5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020 x86_64 ETH-STAKER-02 (none))"
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:340 fd_limits="(soft=1024, hard=1048576)"
+level=info ts=2020-05-17T18:31:33.013Z caller=main.go:341 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-17T18:31:33.019Z caller=web.go:523 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-17T18:31:33.021Z caller=main.go:678 msg="Starting TSDB ..."
+level=info ts=2020-05-17T18:31:33.038Z caller=head.go:575 component=tsdb msg="Replaying WAL, this may take awhile"
+level=info ts=2020-05-17T18:31:33.038Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+level=info ts=2020-05-17T18:31:33.039Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=451.301µs
+level=info ts=2020-05-17T18:31:33.041Z caller=main.go:694 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-17T18:31:33.041Z caller=main.go:695 msg="TSDB started"
+level=info ts=2020-05-17T18:31:33.041Z caller=main.go:799 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+level=info ts=2020-05-17T18:31:33.052Z caller=main.go:827 msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml
+level=info ts=2020-05-17T18:31:33.052Z caller=main.go:646 msg="Server is ready to receive web requests."
 ```
 
 ### 
