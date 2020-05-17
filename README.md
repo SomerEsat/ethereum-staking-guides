@@ -244,7 +244,8 @@ ad15e1df92f1f1ecdf0c493080c91500000000000000000000000000000000000000000000000000
 2d252438ceb5a25e
 
 ===================================================================
-[2020-05-16 23:30:27]  INFO accounts: Deposit data displayed for public key: 0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
+[2020-05-16 23:30:27]  INFO accounts: Deposit data displayed for public key: 
+0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
 ```
 
 4. Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website.
