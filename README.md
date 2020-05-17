@@ -726,11 +726,13 @@ Output looks like this:
 ```
 grafana:
   Installed: (none)
-  Candidate: 6.3.3
+  Candidate: 6.7.3
   Version table:
-     6.3.3 500
+     6.7.3 500
         500 https://packages.grafana.com/oss/deb stable/main amd64 Packages
-...
+     6.7.2 500
+        500 https://packages.grafana.com/oss/deb stable/main amd64 Packages
+     ...
 ```
 
-Verify the version matches the latest version shown [here](https://packages.grafana.com/oss/deb).
+Verify the version at the top matches the latest version shown [here](https://packages.grafana.com/oss/deb).
