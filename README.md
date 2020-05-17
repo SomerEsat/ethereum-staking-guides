@@ -238,7 +238,7 @@ Once the ETH appears in your MetaMask wallet move to the next step.
 
 As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet despoit contract. To do this go to the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
-Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary). The web page should then display confirmation that you have sufficient ETH in your wallet to stake:
+Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary) and click 'Connect'. The web page should then display confirmation that you have sufficient ETH in your wallet to stake:
 
 ```
 This test network leverages the Goerli test network to simulate validator deposits on a proof-of-work chain.
