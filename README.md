@@ -234,7 +234,7 @@ f) If you are planning on running multiple validators ask for what you need (32 
 
 Once the ETH appears in your MetaMask wallet move to the next step.
 
-### Generate validator keys and deposit ETH
+### Generate validator keys 
 
 As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet despoit contract. To do this go to the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
 
@@ -248,7 +248,9 @@ You are 0x724F321C4efeD5e3C7CcA40168810c258c82d02F and you have 631 GöETH.
 To deposit as a validator you'll need at least 32.0 GöETH.
 ```
 
-If you have >= 32 ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send ETH to the deposit contact. Let's get started.
+### Deposit staking ETH
+
+If you have >= 32 Göerli ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send Göerli ETH to the deposit contact. Let's get started.
 
 #### a) Run the validator
 
