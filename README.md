@@ -566,7 +566,7 @@ Check the status to make sure it's running correctly.
 sudo systemctl status prometheus
 ```
 
-Output should look something like this. Press Q to quit.
+Output should look something like this. If you did everything right, it should say **Active: active (running)**. If not then go back and repeat the steps to fix the problem. Press Q to quit.
 
 ```
 ● prometheus.service - Prometheus
@@ -590,3 +590,36 @@ May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.
 May 17 22:53:29 ETH-STAKER prometheus[32345]: level=info ts=2020-05-17T22:53:29.358Z caller=main.go:646 msg="Server>
 lines 1-19/19 (END)                                                                                                     
 ```
+
+### Install Node Exporter
+
+Prometheus will proivde metrics about the beacon chain and validators. If we want metrics about our Ubuntu instance, we'll need an extension called [Node_Exporter](https://github.com/prometheus/node_exporter). You can find the latest stable version [here](https://prometheus.io/download/) if you want to specify a diffent version below.
+
+```
+cd ~
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz
+```
+
+Unpack the downloaded software.
+
+```
+tar xvf node_exporter-0.15.1.linux-amd64.tar.gz
+```
+
+Copy the binary to the /usr/local/bin directory and set the user and group ownership to the node_exporter user we created in `Step 7`.
+
+```
+# sudo cp node_exporter-0.15.1.linux-amd64/node_exporter /usr/local/bin
+sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+```
+
+
+
+
+
+<br>
+
+## Step 8 - Install Grafana
+
+While Prometheus is our datasource, Grafana is going provide our reporting dashboard capability. Let's install it and configure a dashboard.
+
