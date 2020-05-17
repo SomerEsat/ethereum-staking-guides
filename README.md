@@ -502,8 +502,8 @@ Output should look something like this. Press Ctrl + C to exit.
 ```
 level=info ts=2020-05-17T18:31:33.012Z caller=main.go:302 msg="No time or size retention was set so using the default time retention" duration=15d
 level=info ts=2020-05-17T18:31:33.012Z caller=main.go:337 msg="Starting Prometheus" version="(version=2.18.1, branch=HEAD, revision=ecee9c8abfd118f139014cb1b174b08db3f342cf)"
-level=info ts=2020-05-17T18:31:33.012Z caller=main.go:338 build_context="(go=go1.14.2, user=root@2117a9e64a7e, date=20200507-16:51:47)"
-level=info ts=2020-05-17T18:31:33.012Z caller=main.go:339 host_details="(Linux 5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020 x86_64 ETH-STAKER-02 (none))"
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:338 build_context="(go=go1.14.2, user=x@x, date=20200507-16:51:47)"
+level=info ts=2020-05-17T18:31:33.012Z caller=main.go:339 host_details="(Linux 5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020 x86_64 ETH-STAKER (none))"
 level=info ts=2020-05-17T18:31:33.012Z caller=main.go:340 fd_limits="(soft=1024, hard=1048576)"
 level=info ts=2020-05-17T18:31:33.013Z caller=main.go:341 vm_limits="(soft=unlimited, hard=unlimited)"
 level=info ts=2020-05-17T18:31:33.019Z caller=web.go:523 component=web msg="Start listening for connections" address=0.0.0.0:9090
