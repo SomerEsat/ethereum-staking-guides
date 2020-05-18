@@ -815,6 +815,21 @@ Donations/tips are always welcome. Mainnet ETH: 0x724F321C4efeD5e3C7CcA40168610c
 
 I used a bunch of sites and guides to put this together. Thank you to those authors for showing me how!
 
+[Prysmatic Labs](https://prysmaticlabs.com/)
+
+[Prysmatic Labs Discord](https://discord.gg/YMVYzv6)
+
+[Installing Prysm on GNU/Linux with Prysm.sh](https://docs.prylabs.network/docs/install/linux/)
+
+[Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
+[UFW Essentials](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+
+[How to Install Prometheus on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04)
+
 [How to install and secure Grafana on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-grafana-on-ubuntu-18-04)
 
 [Grafana dashboard](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/tree/master)
+
+[Markdownguide.org - Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+
+[Stack Edit](https://stackedit.io/app#)
