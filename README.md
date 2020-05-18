@@ -772,8 +772,6 @@ Enable Grafana to start on boot.
 sudo systemctl enable grafana-server
 ```
 
-<br>
-
 ### Configure Grafana login
 
 Great job on getting this far! Now that you have everything up and running you can 
