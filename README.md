@@ -140,7 +140,7 @@ sudo apt dist-upgrade && sudo apt autoremove
 
 Not the cleanest approach, but it makes things much easier to visualize. The Prysm beacon and validator services could be run as background services on startup so you don't have to manually start them, however, the validator requires a password, and I'm not sure how to store it in a secure way. Probably via an [ethdo wallet](https://docs.prylabs.network/docs/prysm-usage/wallet-keymanager/).
 
-The following will install a lightweight GUI onto the Ubuntu server called [xfce](https://www.xfce.org/). If it gives you the option during setup, select ```lightdm```.
+The following will install a lightweight GUI onto the Ubuntu server called [xfce](https://www.xfce.org/). If it gives you the option during setup, select `lightdm`.
 
 ```
 sudo apt-get -y install xfce4 
