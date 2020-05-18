@@ -301,25 +301,23 @@ INFO accounts: Deposit data displayed for public key:
 0xaef319a5d9c4ae04a75e651558384cf86eed7d010d814cff776185a9ec22661fbe99d651e3f4ddd7096ca218c6b29290
 ```
 
-Make a note of your public Key. This will be useful for us later when we want to view our validator on the [beaconcha.in](http://www.beaconcha.in) website, for example.
+Make a note of your public Key. This will be useful later to view the validator account status on [beaconcha.in](http://www.beaconcha.in).
 
 #### d) Make the deposit
 
-Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator deposit data** at `Step 3` on the [Prysm Labs Testnet Participation](https://prylabs.net/participate) page.
+Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator deposit data** at `Step 3` on the [Prysm Labs Testnet Participation](https://prylabs.net/participate) web page.
 
-Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transaction details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockchain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
+Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transaction details, click on the **Confirm** button. MetaMask will eventually confirm the transaction and a message will show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockchain via Etherscan by clicking on the small arrow on the confirmed transaction in MetaMask.
 
 > Sometimes the Prysm web page locks up after you submit. It's not a major problem - the main thing to verify is that your deposit is confimred as successful in Etherscan.
 
-Repeat steps **a** through **d** in this section for each validator key you would like to create. 
+Repeat steps **a** through **d** in this section for each validator account you would like to create. Keys will all be stored in the keystore and the validator binary will manage all of the keys for you.
 
-Keys will all be stored in the keystore and the validator binary will manage all of the keys for you. 
-
-> Remember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
+> Remember: Each validator account you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity use the same password for each key.
 
 <br>
 
-## Step 6 - Begin validating (and earning testnet ETH!)
+## Step 6 - Begin validating (and earning sweet testnet ETH!)
 
 *Your beacon node should be **fully synced** before continuing with this step.*
 
@@ -328,16 +326,25 @@ Keys will all be stored in the keystore and the validator binary will manage all
 It will prompt you for your password - this is the password you supplied in the previous step. If you used the default key manager, the syntax is:
 
 ```
+cd ~
+cd prysm/
 ./prysm.sh validator --keymanager=keystore --enable-account-metrics
 ```
 
 The `--enable-account-metrics` parameter is an important addition that will allow us to expose metrics on the validator and the validations that it does. More about that in the next step.
 
-The validator can take more than 12 hours to activate the validation key(s). The output from the validator process indicates the status. Once activated you should see something like this for each key: 
+It can take more than 12 hours to activate the validation key(s). The output from the validator process indicates the status. 
+
+```
+[2020-05-18 02:08:55]  INFO validator: Deposit for validator received but not processed into the beacon state eth1DepositBlockNumber=2714819 expectedInclusionSlot=217796 pubKey=0xaef319a5d9c4 status=DEPOSITED
+```
+
+Once activated you should see something like this for each key: 
 
 ```
 [2020-05-17 18:18:47]  INFO validator: Validator activated pubKey=0xaef319a5d9c4
 ```
+
 You can check the status of your validator via [beaconcha.in](http://www.beaconcha.in). Simply do a search for your validator public key.
 
 <br>
