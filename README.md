@@ -10,7 +10,11 @@ This is a step-by-step guide to staking on Ethereum 2.0. It is based on the foll
 - Prometheus metrics ([link](https://prometheus.io/))
 - Grafana dashboard ([link](https://grafana.com/))
   
-This guide also includes instructions for exposing validator and instance metrics via Prometheus and creating a Grafana dashboard to view them.
+This guide includes instructions on how to:
+- Configure a newly running Ubuntu server instance
+- Install and configue the Prysmatic Labs beacon-chain and validator software
+- Send validator deposits for staking on the Topaz Testnet
+- Install and configure Prometheus metrics and set up a Grafana dashboard to view them
 
 ### Acknowledgements
 This guide is based on information I got from various sources. They are listed in the references setion at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
