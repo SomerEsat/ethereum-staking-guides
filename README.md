@@ -2,7 +2,7 @@
 
 <br>
 
-This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the following technologies:
+This is a step-by-step guide to staking on Ethereum 2.0. It is based on the following technologies:
 - Ubuntu v20.04 (LTS) x64 server ([link](https://ubuntu.com/))
 - Prysmatic Labs Ethereum 2.0 client - Prysm ([link](https://prysmaticlabs.com/))
 - Prysmatic Labs Topaz Testnet pubilc network
