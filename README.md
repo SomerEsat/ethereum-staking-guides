@@ -56,7 +56,7 @@ Allow Grafana - Allows incoming requests to the Grafana web server (port 3000/TC
 ufw allow 3000/tcp
 ```
 
-Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can (optionally) remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for our server below.
+Allow RDP - Allows connection to the server over RDP (port 3389). This is so we can (optionally) remote into the server and run the Prysm clients (beacon and validator). We will configure a minimal desktop environment for the server below.
 
 ```
 ufw allow 3389/tcp
