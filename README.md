@@ -336,6 +336,7 @@ The validator can take more than 12 hours to activate the validation key(s). The
 ```
 [2020-05-17 18:18:47]  INFO validator: Validator activated pubKey=0xaef319a5d9c4
 ```
+You can check the status of your validator via [beaconcha.in](http://www.beaconcha.in). Simply do a search for your validator public key.
 
 <br>
 
@@ -813,21 +814,38 @@ Donations/tips are always welcome. Mainnet ETH: 0x724F321C4efeD5e3C7CcA40168610c
 
 I used a bunch of sites and guides to put this together. Thank you to those authors for showing me how!
 
+[Logging in as root is bad](https://askubuntu.com/questions/16178/why-is-it-bad-to-log-in-as-root)
+
+[Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
+
+[UFW firewall](https://help.ubuntu.com/community/UFW) 
+
+[UFW Essentials](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+
+[xfce](https://www.xfce.org/)
+
 [Prysmatic Labs](https://prysmaticlabs.com/)
 
 [Prysmatic Labs Discord](https://discord.gg/YMVYzv6)
 
 [Installing Prysm on GNU/Linux with Prysm.sh](https://docs.prylabs.network/docs/install/linux/)
 
-[Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
-[UFW Essentials](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+[ethdo wallet](https://docs.prylabs.network/docs/prysm-usage/wallet-keymanager/)
+
+[Bazel](https://docs.prylabs.network/docs/install/lin/bazel)
+
+[Prometheus](https://prometheus.io/download/)
+
+[Node_Exporter](https://github.com/prometheus/node_exporter)
 
 [How to Install Prometheus on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04)
 
 [How to install and secure Grafana on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-grafana-on-ubuntu-18-04)
 
-[Grafana dashboard](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/tree/master)
+[GuillaumeMiralles Grafana dashboard](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/tree/master)
 
 [Markdownguide.org - Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 
 [Stack Edit](https://stackedit.io/app#)
+
+[beaconcha.in](http://www.beaconcha.in)
