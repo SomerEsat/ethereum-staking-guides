@@ -190,21 +190,21 @@ The first thing it does is process deposits. The output looks like this:
 [2020-05-17 21:49:55]  INFO powchain: Processing deposits from Ethereum 1 chain deposits=8704
 ```
 
-Once that is done, it will wait for suitable peers. The output looks like this:
+Once that is done it will wait for suitable peers. The output looks like this:
 
 ```
 [2020-05-17 21:52:20]  INFO initial-sync: Waiting for enough suitable peers before syncing required=3 suitable=2
 [2020-05-17 21:52:25]  INFO initial-sync: Waiting for enough suitable peers before syncing required=3 suitable=2
 ```
 
-And then once it has found and connected to the necessary number of peers, it begins the sync process. The output looks like this:
+And then once it has found and connected to the minimum number of peers, it begins the sync process. The output looks like this:
 
 ```
 [2020-05-17 21:53:02]  INFO initial-sync: Processing block 0xc7c761d3... 532/215365 - estimated time remaining 2h31m23s blocksPerSecond=23.6 peers=12
 [2020-05-17 21:53:02]  INFO initial-sync: Processing block 0xf0a3de3a... 533/215365 - estimated time remaining 2h31m4s blocksPerSecond=23.7 peers=12
 ```
 
-The beacon-chain binary will begin to sync the beacon chain. It may take several hours for the node to fully sync. The terminal output gives status information and an estimate for time remaining. Prysmatic Labs recommends that you wait for this to complete before you run the validator:
+The beacon-chain will begin to sync. It may take several hours for the node to fully sync. The terminal output gives status information and an estimate for time remaining. Prysmatic Labs recommends that you wait for this to complete before you run the validator:
 
 > "NOTICE: The beacon node you are using should be completely synced before submitting your deposit for the validator client, otherwise the validator will not be able to validate and will inflict minor inactivity balance penalties."
 
@@ -216,11 +216,11 @@ While the beacon node is syncing, let's move onto the next steps.
 
 *Your beacon node does not have to be synced to do these steps.*
 
-The validator allows you to define one or more validator keys. Each key will need to be associated with a 32 ETH deposit into the Topaz Testnet deposit contract.
+The validator allows you to define one or more validator keys. Each key will need to be associated with a 32 ETH deposit into the Topaz Testnet staking deposit contract.
 
 ### Get staking ETH
 
-To become a validator on the Topaz testnet you will need to get 32 ETH from the Göerli Test Network. Follow these steps:
+To become a validator on the Topaz testnet you will need to get 32 ETH from the Göerli Test Network. **Do not use mainnet ETH**. Follow these steps:
 
 a) Click on the MetaMask browser extension and log in.
 
@@ -230,17 +230,17 @@ c) Cick on your name to copy your Goerli ETH wallet address.
 
 d) Head over to the [Prysm Labs Discord](https://discord.gg/YMVYzv6).
 
-e) Ask one of the mods nicely to transfer you some ETH and paste your Goerli ETH wallet address. 
+e) Ask one of the mods *nicely* to transfer you some ETH and paste your Goerli ETH wallet address. 
 
-f) If you are planning on running multiple validators ask for what you need (32 x number of validators).
+f) If you are planning on running multiple validators you can ask for what you need (32 x number of validators).
 
 Once the ETH appears in your MetaMask wallet we are ready to continue to the next step.
 
 ### Connect your MetaMask wallet
 
-As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet deposit contract. To do this you can send the Göerli ETH to the Topaz Testnet deposit contact with your validator key data attached, or you can use the Prysm Labs validator participation web page. Let's do that. Go to [Prysm Labs Testnet Participation](https://prylabs.net/participate).
+As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet staking deposit contract. To do this you send the Göerli ETH in a deposit transaction with your validator key data attached, or you can use the Prysm Labs validator participation web page. Let's do that. Go to [Prysm Labs Testnet Participation](https://prylabs.net/participate) in your web browser.
 
-Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary) and click `Connect`. The web page should then display confirmation that you have sufficient Göerli ETH in your wallet to stake:
+Click on `Step 2` on the web page then click on the MetaMask button. Log into MetaMask (if necessary) and click `Connect`. The web page should then display a confirmation that you have sufficient Göerli ETH in your wallet to stake:
 
 ```
 This test network leverages the Goerli test network to simulate validator deposits on a proof-of-work chain.
@@ -252,28 +252,28 @@ To deposit as a validator you'll need at least 32.0 GöETH.
 
 ### Generate validator keys
 
-If you have >= 32 Göerli ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send Göerli ETH to the deposit contact. Let's get started.
+If you have >= 32 Göerli ETH the page will allow you to click on `Step 3`. This is where you will paste your validator's staking data and send Göerli ETH to the deposit contact. Next we will get the staking data.
 
 #### a) Run the validator
 
-In a new terminal window run this command:
+In a new terminal window run this command to create a validator account:
 
 ```
 cd prysm/
 ./prysm.sh validator accounts create
 ```
 
-A validator binary will be downloaded and executed. 
+The Prysm validator binary will be downloaded and executed. 
 
 #### b) Set up the keystore
 
-It will prompt you to specify the keystore path where your validator keys will be stored. 
+It will prompt you to specify the keystore path where your validator account keys will be stored. 
 
 ```
 INFO accounts: Please specify the keystore path for your private keys (default: "/root/.eth2validators"):
 ```
    
-You can provide a different value (TODO(SE): LINK), or to keep things simple go with the default keystore by pressing **\<enter\>**.
+You can provide a different value if you like, but, to keep things simple go with the default keystore by pressing **\<enter\>**.
 
 #### c) Secure the key data
 
