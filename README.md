@@ -787,7 +787,7 @@ sudo systemctl enable grafana-server
 Great job on getting this far! Now that you have everything up and running you can 
 go to [http://\<yourServerIPAddress\>:3000/] in a browser and the Grafana login screen should come up.
 
-> You can go further to set up a Nginx web server and add an SSL certificate to secure your connection. This is testnet stuff so I didn't bother. 
+You can go further to set up a Nginx web server and add an SSL certificate to secure your connection. This is testnet stuff so I didn't bother. 
 
 Enter `admin` for the username and password. It will prompt you to change your password and you should do that.
 
