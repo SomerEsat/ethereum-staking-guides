@@ -797,7 +797,7 @@ Paste the JSON from [here](https://github.com/GuillaumeMiralles/prysm-grafana-da
 
 <br>
 
-## Step 10 - Final Remarks
+## Final Remarks
 
 That's it! I hope you enjoyed this guide! 
 
