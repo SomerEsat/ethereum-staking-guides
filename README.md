@@ -771,3 +771,50 @@ Enable Grafana to start on boot.
 ```
 sudo systemctl enable grafana-server
 ```
+
+<br>
+
+### Configure Grafana login
+
+Great job on getting this far! Now that you have everything up and running you can 
+go to [http://\<yourServerIPAddress\>:3000/] in a browser and the Grafana login screen should come up.
+
+> You can go further to set up a Nginx web server and add an SSL certificate to secure your connection. This is testnet stuff so I didn't bother. 
+
+Enter `admin` for the username and password. It will prompt you to change your password and you should do that.
+
+### Configure Grafana data source
+
+Let's configure a datasource. Move your mouse over the gear icon on the left menu bar. A menu will pop-up - choose `Data Sources`.
+
+Click on `Add Data Source` and then choose `Prometheus`. Enter `http://localhost:9090` for the URL then click on `Save and Test`.
+
+### Import Grafana dashboard
+
+Now let's import a dashboard. Move your mouse over the `+` icon on the left menu bar. A menu will pop-up - choose `Import`.
+
+Paste the JSON from [here](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/blob/master/less_10_validators.json) and click `Load`. You should be able to view the dasboard. At first you won't have suffcient data, especially if you haven't run your validator yet, but after running for a while you will see some metrics.
+
+> Credit goes to Github user [GuillaumeMiralles](https://github.com/GuillaumeMiralles) for the ace dashboard.
+
+<br>
+
+## Step 10 - Final Remarks
+
+That's it! I hope you enjoyed this guide! 
+
+- If you have feedback you can reach me here: [https://www.twitter.com/SomerEsat].
+
+- If you liked this guide and think others would benefit from it then please share it!
+
+Donations/tips are always welcome. Mainnet ETH: 0x724F321C4efeD5e3C7CcA40168610c258c82d02F
+
+<br>
+
+## References
+
+I used a bunch of sites and guides to put this together. Thank you to those authors for showing me how!
+
+[How to install and secure Grafana on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-grafana-on-ubuntu-18-04)
+
+[Grafana dashboard](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/tree/master)
