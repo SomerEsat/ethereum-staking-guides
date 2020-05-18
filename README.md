@@ -719,7 +719,7 @@ Add the Grafana repository to the APT sources.
 sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
 ```
 
-Refresh the apt cache
+Refresh the apt cache.
 
 ```
 sudo apt update
@@ -731,7 +731,7 @@ Make sure Grafana is installed from the repository.
 apt-cache policy grafana
 ```
 
-Output looks like this:
+Output should look like this:
 
 ```
 grafana:
@@ -811,7 +811,7 @@ Paste the JSON from [here](https://github.com/GuillaumeMiralles/prysm-grafana-da
 
 That's it! I hope you enjoyed this guide! 
 
-- If you have feedback you can reach me here: [https://www.twitter.com/SomerEsat].
+- If you have feedback you can reach me on [Twitter](https://www.twitter.com/SomerEsat).
 
 - If you liked this guide and think others would benefit from it then please share it!
 
