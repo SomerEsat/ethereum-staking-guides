@@ -17,7 +17,7 @@ This guide includes instructions on how to:
 - Install and configure Prometheus metrics and set up a Grafana dashboard to view them
 
 ### Acknowledgements
-This guide is based on information I got from various sources. They are listed in the references setion at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
+This guide is based on information I got from various sources. They are listed in the references section at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
 
 ### Disclaimer
 I'm not an expert in any of the technologies listed in this guide (basically I am a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
