@@ -305,7 +305,7 @@ Make a note of your public Key. This will be useful later to view the validator 
 
 #### d) Make the deposit
 
-Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator deposit data** at `Step 3` on the [Prysm Labs Testnet Participation](https://prylabs.net/participate) web page.
+Copy the **Raw Transaction Data** without the header and footer and paste it into the box under the heading **Your validator deposit data** at `Step 3` on the [Prysm Labs Testnet Participation](https://prylabs.net/participate) web page.
 
 Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transaction details, click on the **Confirm** button. MetaMask will eventually confirm the transaction and a message will show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockchain via Etherscan by clicking on the small arrow on the confirmed transaction in MetaMask.
 
