@@ -13,7 +13,7 @@ This is a step-by-step guide to staking on Ethereum 2.0. It is based upon the fo
 This guide also includes instructions for exposing validator and instance metrics via Prometheus and creating a Grafana dashboard to view them.
 
 ### Acknowledgements
-The majority of this guide is based on documentation from other soruces. These are listed at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
+This guide is based on information I got from various sources. They are listed in the references setion at the bottom and this guide wouldn't exist without them. Thank you, all! Thanks also to Prysmatic Labs for their cool software, great documentation, and their assistance with running my own staking setup.
 
 ### Disclaimer
 I'm not an expert in any of the technologies listed in this guide (basically I am a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
@@ -24,7 +24,7 @@ This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, MetaMask. B
 ### Requirements
 - Ubuntu server instance. I used v20.04 (LTS) x64 server VM.
 - MetaMask crypto wallet browser extension, installed and configured.
-- Prysm softare ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
+- Prysm software ([minimum requirements](https://docs.prylabs.network/docs/install/linux/)):
   - Operating System: 64-bit Linux, Mac OS X 10.14+, Windows
   - Processor: Intel Core i5–760 or AMD FX-8100 or better
   - Memory: 4GB RAM
@@ -109,7 +109,7 @@ Using the root user to log in is [risky](https://askubuntu.com/questions/16178/w
 adduser <yourusername>
 ```
 
-You will asked to create a password and some other infomration.
+You will asked to create a password and some other information.
 
 Next, modify the permissions of the new user to grant admin rights to the user by adding them to the sudo group.
 
@@ -202,7 +202,7 @@ And then once it has found and connected to the necessary number of peers, it be
 [2020-05-17 21:53:02]  INFO initial-sync: Processing block 0xf0a3de3a... 533/215365 - estimated time remaining 2h31m4s blocksPerSecond=23.7 peers=12
 ```
 
-The beacon-chain binary will begin to sync the beacon chain. It may take several hours for the node to fully sync. The teminal output gives status information and an estimate for time remaining. Prysmatic Labs recommends that you wait for this to complete before you run the validator:
+The beacon-chain binary will begin to sync the beacon chain. It may take several hours for the node to fully sync. The terminal output gives status information and an estimate for time remaining. Prysmatic Labs recommends that you wait for this to complete before you run the validator:
 
 > "NOTICE: The beacon node you are using should be completely synced before submitting your deposit for the validator client, otherwise the validator will not be able to validate and will inflict minor inactivity balance penalties."
 
@@ -236,7 +236,7 @@ Once the ETH appears in your MetaMask wallet we are ready to continue to the nex
 
 ### Connect your MetaMask wallet
 
-As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet despoit contract. To do this you can send the Göerli ETH to the Topaz Testnet deposit contact with your validator key data attached, or you can use the Prysm Labs validator participation web page. Let's do that. Go to [Prysm Labs Testnet Particpation](https://prylabs.net/participate).
+As I mentioned above, in order to validate you will need to deposit 32 Göerli ETH into the Topaz Testnet deposit contract. To do this you can send the Göerli ETH to the Topaz Testnet deposit contact with your validator key data attached, or you can use the Prysm Labs validator participation web page. Let's do that. Go to [Prysm Labs Testnet Participation](https://prylabs.net/participate).
 
 Click on `Step 2` on the web page and click on the MetaMask button and log into MetaMask (if necessary) and click `Connect`. The web page should then display confirmation that you have sufficient Göerli ETH in your wallet to stake:
 
@@ -265,7 +265,7 @@ A validator binary will be downloaded and executed.
 
 #### b) Set up the keystore
 
-It will propt you to specify the keystore path where your validator keys will be stored. 
+It will prompt you to specify the keystore path where your validator keys will be stored. 
 
 ```
 INFO accounts: Please specify the keystore path for your private keys (default: "/root/.eth2validators"):
@@ -303,17 +303,17 @@ Make a note of your public Key. This will be useful for us later when we want to
 
 #### d) Make the deposit
 
-Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator depost data** at `Step 3` on the [Prysm Labs Testnet Particpation](https://prylabs.net/participate) page.
+Copy the Raw Transaction Data without the header and footer and paste it into the box under the heading **Your validator deposit data** at `Step 3` on the [Prysm Labs Testnet Participation](https://prylabs.net/participate) page.
 
-Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transtation details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockcain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
+Ignore `Step 4` and click on `Step 5`. Click on the `Make deposit` button. MetaMask will pop-up and once you examine and verify the transaction details, click on the **Confirm** button. Once MetaMask confirms the transaction a message should show at the bottom of the web page: **Transaction Confirmed. You are deposited**. You can also confirm the transaction on the blockchain via Etherscan by clicking on the small arrow on the confirmed transaction record in MetaMask.
 
-> Sometimes the Prysm web page locks up after you submit. It's not a major problem - the main thing to verify is that your deposit is confimred as sucessful in Etherscan.
+> Sometimes the Prysm web page locks up after you submit. It's not a major problem - the main thing to verify is that your deposit is confimred as successful in Etherscan.
 
 Repeat steps **a** through **d** in this section for each validator key you would like to create. 
 
 Keys will all be stored in the keystore and the validator binary will manage all of the keys for you. 
 
-> Remmember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
+> Remember: Each key you create corresponds to a unique set of transaction data paired with a 32 ETH deposit. For simplicity (for now) use the same password for each key.
 
 <br>
 
@@ -329,7 +329,7 @@ It will prompt you for your password - this is the password you supplied in the 
 ./prysm.sh validator --keymanager=keystore --enable-account-metrics
 ```
 
-The `--enable-account-metrics` parameter is an important addtion that will allow us to expose metrics on the validator and the validations that it does. More about that in the next step.
+The `--enable-account-metrics` parameter is an important addition that will allow us to expose metrics on the validator and the validations that it does. More about that in the next step.
 
 The validator can take more than 12 hours to activate the validation key(s). The output from the validator process indicates the status. Once activated you should see something like this for each key: 
 
@@ -426,7 +426,7 @@ rm -rf prometheus-2.18.1.linux-amd64.tar.gz prometheus-2.18.1.linux-amd64
 
 ### Edit the configuration file
 
-Prometheus uses a configuration file so it knows where to scarpe the data from. We will set this up here.
+Prometheus uses a configuration file so it knows where to scrape the data from. We will set this up here.
 
 Open the YAML config file for editing.
 
@@ -548,13 +548,13 @@ ExecStart=/usr/local/bin/prometheus \
 WantedBy=multi-user.target
 ```
 
-Reload systemd to relfect the changes.
+Reload systemd to reflect the changes.
 
 ```
 sudo systemctl daemon-reload
 ```
 
-And then start the service with the follwoing command.
+And then start the service with the following command.
 
 ```
 sudo systemctl start prometheus
@@ -588,7 +588,7 @@ sudo systemctl enable prometheus
 
 ### Install Node Exporter
 
-Prometheus will proivde metrics about the beacon chain and validators. If we want metrics about our Ubuntu instance, we'll need an extension called [Node_Exporter](https://github.com/prometheus/node_exporter). You can find the latest stable version [here](https://prometheus.io/download/) if you want to specify a diffent version below.
+Prometheus will provide metrics about the beacon chain and validators. If we want metrics about our Ubuntu instance, we'll need an extension called [Node_Exporter](https://github.com/prometheus/node_exporter). You can find the latest stable version [here](https://prometheus.io/download/) if you want to specify a different version below.
 
 ```
 cd ~
@@ -646,7 +646,7 @@ Reload systemd to relfect the changes.
 sudo systemctl daemon-reload
 ```
 
-And then start the service with the follwoing command.
+And then start the service with the following command.
 
 ```
 sudo systemctl start node_exporter
@@ -679,7 +679,7 @@ sudo systemctl enable node_exporter
 
 ### Test prometheus and node_exporter
 
-Everything should be ready to go. You may test the functionality by running a browser on your instance and navigating to [http://localhost:9090]. From there you can run queries to view different metrics. For eample try this query to see how much memory is free in bytes:
+Everything should be ready to go. You may test the functionality by running a browser on your instance and navigating to [http://localhost:9090]. From there you can run queries to view different metrics. For example try this query to see how much memory is free in bytes:
 
 ```
 http://localhost:9090/new/graph?g0.expr=node_memory_MemFree_bytes&g0.tab=1&g0.stacked=0&g0.range_input=1h
@@ -793,7 +793,7 @@ Click on `Add Data Source` and then choose `Prometheus`. Enter `http://localhost
 
 Now let's import a dashboard. Move your mouse over the `+` icon on the left menu bar. A menu will pop-up - choose `Import`.
 
-Paste the JSON from [here](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/blob/master/less_10_validators.json) and click `Load`. You should be able to view the dasboard. At first you won't have suffcient data, especially if you haven't run your validator yet, but after running for a while you will see some metrics.
+Paste the JSON from [here](https://github.com/GuillaumeMiralles/prysm-grafana-dashboard/blob/master/less_10_validators.json) and click `Load`. You should be able to view the dashboard. At first you won't have sufficient data, especially if you haven't run your validator yet, but after running for a while you will see some metrics.
 
 > Credit goes to Github user [GuillaumeMiralles](https://github.com/GuillaumeMiralles) for the ace dashboard.
 
