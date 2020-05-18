@@ -735,4 +735,39 @@ grafana:
      ...
 ```
 
-Verify the version at the top matches the latest version shown [here](https://packages.grafana.com/oss/deb).
+Verify the version at the top matches the latest version shown [here](https://grafana.com/grafana/download). Then proceed with the installation.
+
+```
+sudo apt install grafana
+```
+
+Start the Grafana server.
+
+```
+sudo systemctl start grafana-server
+```
+
+Check the status to make sure it's running correctly.
+
+```
+sudo systemctl status grafana-server
+```
+
+Output should look something like this. If you did everything right, it should say **Active: active (running)**. If not then go back and repeat the steps to fix the problem. Press Q to quit.
+
+```
+● grafana-server.service - Grafana instance
+     Loaded: loaded (/lib/systemd/system/grafana-server.service; disabled; vendor preset: enabled)
+     Active: active (running) since Sun 2020-05-17 23:59:24 UTC; 5s ago
+       Docs: http://docs.grafana.org
+   Main PID: 35118 (grafana-server)
+      Tasks: 14 (limit: 9513)
+     Memory: 16.5M
+     CGroup: /system.slice/grafana-server.service
+```
+
+Enable Grafana to start on boot.
+
+```
+sudo systemctl enable grafana-server
+```
