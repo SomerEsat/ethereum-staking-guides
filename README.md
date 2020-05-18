@@ -835,6 +835,8 @@ I used a bunch of sites and guides to put this together. Thank you to those auth
 
 [Prysmatic Labs](https://prysmaticlabs.com/)
 
+[Prysmatic Eth2 Testnet](https://prylabs.net/)
+
 [Prysmatic Labs Discord](https://discord.gg/YMVYzv6)
 
 [Installing Prysm on GNU/Linux with Prysm.sh](https://docs.prylabs.network/docs/install/linux/)
