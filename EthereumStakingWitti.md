@@ -226,7 +226,7 @@ The validator allows you to define one or more validator keys. Each key will nee
 
 ### Get staking ETH
 
-To become a validator on the Topaz testnet you will need to get 32 ETH from the Göerli Test Network. **Do not use mainnet ETH**. Follow these steps:
+To become a validator on the Witti testnet you will need to get 32 ETH from the Göerli Test Network. **Do not use mainnet ETH**. Follow these steps:
 
 a) Click on the MetaMask browser extension and log in.
 
@@ -249,6 +249,8 @@ As I mentioned above, in order to validate you will need to deposit 32 Göerli E
 a) Open MetaMask and if necessary, sign-in. Using the dropdown at the top, select the Goerli Test Network.
 
 b) Make sure you have sufficent ETH in your wallet. A balance 32 ETH or more is required. If you don't have enough, go back to the previous section.
+
+<img align="center" src="/images/MetaMask01.png" alt="MetaMask">
 
 c) Make sure the `Show HEX Data` option is on so we can attach the validator binary data to our 32 Göerli ETH validator deposit. Click on the circle on the top right of the wallet and choose `Settings`. Click on `Advanced` then scroll down until you see `Show HEX Data`. Switch it on.
 
