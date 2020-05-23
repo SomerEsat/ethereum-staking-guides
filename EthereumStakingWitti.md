@@ -250,11 +250,12 @@ a) Open MetaMask and if necessary, sign-in. Using the dropdown at the top, selec
 
 b) Make sure you have sufficent ETH in your wallet. A balance 32 ETH or more is required. If you don't have enough, go back to the previous section.
 
-<p align="center">
-  <img src="/images/MetaMask01.png" alt="MetaMask" width="25%" height="25%"/>
-</p>
+> <img src="/images/MetaMask01.png" alt="MetaMask" width="25%" height="25%"/>
+
 
 c) Make sure the `Show HEX Data` option is on so we can attach the validator binary data to our 32 Göerli ETH validator deposit. Click on the circle on the top right of the wallet and choose `Settings`. Click on `Advanced` then scroll down until you see `Show HEX Data`. Switch it on.
+
+> <img src="/images/MetaMask02.png" alt="MetaMask" width="25%" height="25%"/>
 
 ### Generate validator keys
 
