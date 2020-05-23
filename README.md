@@ -709,6 +709,10 @@ http://localhost:9090/graph?g0.range_input=1h&g0.expr=validator_balance&g0.tab=1
 
 While Prometheus is our datasource, Grafana is going provide our reporting dashboard capability. Let's install it and configure a dashboard.
 
+We will install using an APT repository beacuse it is easier to install and update. Grafana is available in the official Ubuntu packages repository, however the version of Grafana there may not be the latest, so we will use Grafana’s official repository.
+
+Download the Grafana GPG key with wget, then pipe the output to apt-key. This will add the key to your APT installation’s list of trusted keys.
+
 ```
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 ```
