@@ -390,6 +390,8 @@ sudo chown prometheus:prometheus /var/lib/prometheus
 
 Adjust the version number for the version you want from the [Prometheus download page](https://prometheus.io/download/).
 
+> For Raspberry Pi users - get the link for the arm version and substitute that for the link below.
+
 ```
 cd ~
 curl -LO https://github.com/prometheus/prometheus/releases/download/v2.18.1/prometheus-2.18.1.linux-amd64.tar.gz
@@ -602,6 +604,8 @@ sudo systemctl enable prometheus
 ### Install Node Exporter
 
 Prometheus will provide metrics about the beacon chain and validators. If we want metrics about our Ubuntu instance, we'll need an extension called [Node_Exporter](https://github.com/prometheus/node_exporter). You can find the latest stable version [here](https://prometheus.io/download/) if you want to specify a different version below.
+
+> For Raspberry Pi users - get the link for the arm version and substitute that for the link below.
 
 ```
 cd ~
