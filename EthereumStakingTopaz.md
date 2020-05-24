@@ -22,6 +22,9 @@ This guide is based on information I got from various sources. They are listed i
 ### Disclaimer
 I'm not an expert in any of the technologies listed in this guide (basically I am a noob). I got it working and it's a lot of fun, so I wanted to share it with others. Please forgive any errors or ill-informed choices. Feedback is appreciated!
 
+### Note for Raspberry Pi Users
+I haven't tested this guide on a Rpi. If you want to try, just swap out any required softare for the ARM version where available (e.g. Prometheus has an ARM binary available on the download page - replace the amd64 link with that). No guarantee it will work! You can get support on the Prysmatic Labs Discord.
+
 ### Prerequisites
 This guide assumes basic knowledge of Ethereum, ETH, staking, Linux, and MetaMask. Before you get started you will need to have your Ubuntu server instance up and running. For simplicity I used a VM hosted in a virtual public cloud, but a locally hosted instance is also fine. It will help to have the MetaMask browser extension installed and configured. The rest we will do along the way. GLHF!
 
