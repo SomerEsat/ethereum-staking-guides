@@ -9,6 +9,11 @@
 - Staking Guide - [Ubuntu/Nimbus/Medalla](https://medium.com/@SomerEsat/guide-to-staking-on-ethereum-2-0-ubuntu-medalla-nimbus-5f4b2b0f2d7c?source=friends_link&sk=ee272e7d2c5c53f9e69f302155cb1714)
 
 
+** Ethereum 2.0 - Pyrmont Testnet**
+
+In progress.
+
+
 **Ethereum 2.0 - Mainnet**
 
 Coming soon.
