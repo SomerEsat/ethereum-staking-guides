@@ -6,7 +6,7 @@
 
 - Staking Guide - [Ubuntu/Pyrmont/Teku](https://someresat.medium.com/3da74372910?source=friends_link&sk=835747c0fab93ccf85b4866ffae74b25)
 
-- Staking Guide - [Ubuntu/Nimbus/Pyrmont](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-pyrmont-nimbus-e6592c110843?source=friends_link&sk=c0ef6aefdf68305739832a569ed0a454)
+- Staking Guide - [Ubuntu/Pyrmont/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-pyrmont-nimbus-e6592c110843?source=friends_link&sk=c0ef6aefdf68305739832a569ed0a454)
 
 **Ethereum 2.0 - Mainnet**
 
