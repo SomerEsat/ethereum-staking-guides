@@ -7,6 +7,6 @@
 
 **Ethereum 2.0 - Mainnet**
 
-- Staking Guide - [Ubuntu/Lighthouse](https://medium.com/r/?url=https%3A%2F%2Fsomeresat.medium.com%2F41de20513b12%3Fsource%3Dfriends_link%26sk%3Dac7477fd99b6648a5745a3e327f2701c)
+- Staking Guide - [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-lighthouse-41de20513b12?sk=ac7477fd99b6648a5745a3e327f2701c)
 
-- Staking Guide - [Ubuntu/Nimbus](https://medium.com/r/?url=https%3A%2F%2Fsomeresat.medium.com%2Fe86bdee8c550%3Fsource%3Dfriends_link%26sk%3D6d2d96e714d0ec41c702b94bddec5040)
+- Staking Guide - [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-nimbus-e86bdee8c550?sk=6d2d96e714d0ec41c702b94bddec5040)
