@@ -22,4 +22,4 @@
 
 - [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-testnet-ubuntu-pyrmont-teku-3da74372910?sk=835747c0fab93ccf85b4866ffae74b25) **DO NOT USE FOR MAINNET**
 
-- [Changg Log](https://github.com/SomerEsat/ethereum-staking-guide/blob/master/ChangeLog-Testnet.md)
+- [Change Log](https://github.com/SomerEsat/ethereum-staking-guide/blob/master/ChangeLog-Testnet.md)
