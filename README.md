@@ -16,6 +16,8 @@
 
 - [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-nimbus-e7cefd318749) **DO NOT USE FOR MAINNET**
 
+- [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-lighthouse-794d3cd7cf4e) **DO NOT USE FOR MAINNET**
+
 - [Change Log](https://github.com/SomerEsat/ethereum-staking-guide/blob/master/ChangeLog-Testnet.md)
 
 <br />
@@ -23,8 +25,6 @@
 **Ethereum 2.0 - Pyrmont Testnet Staking Guides** 
 
 NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Prater
-
-- [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-pyrmont-lighthouse-a634d3b87393?sk=459494148fdab0b03c675ea0864d7486) **DO NOT USE FOR MAINNET**
 
 - [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-pyrmont-prysm-a10b5129c7e3?sk=bf99be4e432410badda3d2844f3d95d3) **DO NOT USE FOR MAINNET**
 
