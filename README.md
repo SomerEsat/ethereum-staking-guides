@@ -8,8 +8,6 @@
 
 - [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-teku-e4247e7c75a1?sk=6d63b55ebe821bd18788c99fa81e437c)
 
-- [Change Log](https://github.com/SomerEsat/ethereum-staking-guide/blob/master/ChangeLog-Mainnet.md)
-
 <br />
 
 **Ethereum 2.0 - Prater Testnet Staking Guides**
@@ -18,7 +16,7 @@
 
 - [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-lighthouse-794d3cd7cf4e) **DO NOT USE FOR MAINNET**
 
-- [Change Log](https://github.com/SomerEsat/ethereum-staking-guide/blob/master/ChangeLog-Testnet.md)
+- [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-teku-3249f1922385) **DO NOT USE FOR MAINNET**
 
 <br />
 
@@ -27,5 +25,3 @@
 NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Prater
 
 - [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-pyrmont-prysm-a10b5129c7e3?sk=bf99be4e432410badda3d2844f3d95d3) **DO NOT USE FOR MAINNET**
-
-- [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-testnet-ubuntu-pyrmont-teku-3da74372910?sk=835747c0fab93ccf85b4866ffae74b25) **DO NOT USE FOR MAINNET**
