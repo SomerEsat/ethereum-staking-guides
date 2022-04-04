@@ -8,6 +8,8 @@
 
 - [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-teku-e4247e7c75a1?sk=6d63b55ebe821bd18788c99fa81e437c)
 
+- Ubuntu/LodeStar - coming soon!
+
 <br />
 
 **Ethereum - Prater Testnet Staking Guides**
