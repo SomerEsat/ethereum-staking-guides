@@ -1,4 +1,4 @@
-**Ethereum 2.0 - Mainnet Staking Guides**
+**Ethereum - Mainnet Staking Guides**
 
 - [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-lighthouse-41de20513b12?sk=ac7477fd99b6648a5745a3e327f2701c)
 
@@ -10,7 +10,7 @@
 
 <br />
 
-**Ethereum 2.0 - Prater Testnet Staking Guides**
+**Ethereum - Prater Testnet Staking Guides**
 
 - [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-nimbus-e7cefd318749) **DO NOT USE FOR MAINNET**
 
@@ -20,7 +20,7 @@
 
 <br />
 
-**Ethereum 2.0 - Pyrmont Testnet Staking Guides** 
+**Ethereum - Pyrmont Testnet Staking Guides** 
 
 NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Prater
 
