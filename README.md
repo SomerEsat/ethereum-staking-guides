@@ -12,6 +12,13 @@
 
 <br />
 
+**Ethereum - Mainnet Migration Guides**
+
+- [Series Introduction](https://someresat.medium.com/ethereum-staker-migration-guides-introduction-45505079b1f0)
+- [Migrating from Prysm to Nimbus](https://someresat.medium.com/ethereum-staker-migration-guide-migrating-from-prysm-to-nimbus-b802a7dcb31e)
+
+<br />
+
 **Ethereum - Prater Testnet Staking Guides**
 
 - [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-nimbus-e7cefd318749) **DO NOT USE FOR MAINNET**
