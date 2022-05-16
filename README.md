@@ -1,5 +1,7 @@
 **Ethereum - Mainnet Staking Guides**
 
+Use these guides for staking on the Ethereum mainnet.
+
 - [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-lighthouse-41de20513b12?sk=ac7477fd99b6648a5745a3e327f2701c)
 
 - [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-nimbus-e86bdee8c550?sk=6d2d96e714d0ec41c702b94bddec5040)
@@ -14,12 +16,16 @@
 
 **Ethereum - Mainnet Migration Guides**
 
+Use these guides to move from a majority client (Prysm) to a minority client.
+
 - [Series Introduction](https://someresat.medium.com/ethereum-staker-migration-guides-introduction-45505079b1f0)
 - [Migrating from Prysm to Nimbus](https://someresat.medium.com/ethereum-staker-migration-guide-migrating-from-prysm-to-nimbus-b802a7dcb31e)
 
 <br />
 
 **Ethereum - Prater Testnet Staking Guides**
+
+Use these guides to practice setting up your staking setup.
 
 - [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-nimbus-e7cefd318749) **DO NOT USE FOR MAINNET**
 
