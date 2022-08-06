@@ -29,9 +29,24 @@ Use these guides to move from a majority client (Prysm) to a minority client on 
 
 <br/>
 
+## Göerli Testnet Staking Guides ##
+
+Use these guides to practice setting up your staking setup on the Etheruem Göerli testnet.
+
+| Guide <img width=325/> | Change Log <img width=400/> |
+| :---- | :--------- |
+| Ubuntu/Nimbus - coming soon! | |
+| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
+| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
+| Ubuntu/Prysm - coming soon! | |
+
+<br/>
+
 ## Prater Testnet Staking Guides ##
 
 Use these guides to practice setting up your staking setup on the Etheruem Prater testnet.
+
+NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Göerli
 
 | Guide <img width=325/> | Change Log <img width=400/> |
 | :---- | :--------- |
@@ -46,7 +61,7 @@ Use these guides to practice setting up your staking setup on the Etheruem Prate
 
 Use these guides to practice setting up your staking setup on the Etheruem Pyrmont testnet.
 
-NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Prater
+NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Göerli
 
 | Guide <img width=325/> | Change Log <img width=400/> |
 | :---- | :--------- |
