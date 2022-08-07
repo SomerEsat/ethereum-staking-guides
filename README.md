@@ -31,28 +31,13 @@ Use these guides to move from a majority client (Prysm) to a minority client on 
 
 ## Goerli Testnet Staking Guides ##
 
-Use these guides to practice setting up your staking setup on the Etheruem Göerli testnet.
+Use these guides to practice setting up your staking setup on the Etheruem Goerli testnet.
 
 | Guide <img width=345/> | Change Log <img width=400/> |
 | :---- | :--------- |
-| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | Published 06 Aug 2022 |
+| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
 | [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
 | [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
-| Ubuntu/Prysm - coming soon! | |
-
-<br/>
-
-## Prater Testnet Staking Guides ##
-
-Use these guides to practice setting up your staking setup on the Etheruem Prater testnet.
-
-NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Göerli
-
-| Guide <img width=345/> | Change Log <img width=400/> |
-| :---- | :--------- |
-| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-nimbus-e7cefd318749) **DO NOT USE FOR MAINNET** | |
-| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-lighthouse-794d3cd7cf4e) **DO NOT USE FOR MAINNET** | |
-| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-2-0-ubuntu-prater-teku-3249f1922385) **DO NOT USE FOR MAINNET** | |
 | Ubuntu/Prysm - coming soon! | |
 
 <br/>
@@ -61,7 +46,7 @@ NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Gö
 
 Use these guides to practice setting up your staking setup on the Etheruem Pyrmont testnet.
 
-NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Göerli
+NOTE: Pyrmont is deprecated. Guides are in the process of being converted to Goerli testnet.
 
 | Guide <img width=345/> | Change Log <img width=400/> |
 | :---- | :--------- |
