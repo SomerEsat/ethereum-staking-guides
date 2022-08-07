@@ -29,13 +29,13 @@ Use these guides to move from a majority client (Prysm) to a minority client on 
 
 <br/>
 
-## Göerli Testnet Staking Guides ##
+## Goerli Testnet Staking Guides ##
 
 Use these guides to practice setting up your staking setup on the Etheruem Göerli testnet.
 
 | Guide <img width=345/> | Change Log <img width=400/> |
 | :---- | :--------- |
-| Ubuntu/Nimbus - coming soon! | |
+| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | Published 06 Aug 2022 |
 | [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
 | [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) **DO NOT USE FOR MAINNET** | Published 06 Aug 2022 |
 | Ubuntu/Prysm - coming soon! | |
