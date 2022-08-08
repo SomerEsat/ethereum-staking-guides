@@ -23,8 +23,8 @@ Use these guides to move from a majority client (Prysm) to a minority client on 
 | [Series Introduction](https://someresat.medium.com/ethereum-staker-migration-guides-introduction-45505079b1f0) | Published 12 April 2022 |
 | [Migrating from Prysm to Nimbus](https://someresat.medium.com/ethereum-staker-migration-guide-migrating-from-prysm-to-nimbus-b802a7dcb31e) | Published 11 May 2022 |
 | Migrating from Prysm to Teku - coming soon! | |
-| Migrating from Prysm to Lighthouse - coming soon! | |
 | Migrating from Prysm to Lodestar - coming soon! | |
+| Migrating from Prysm to Lighthouse - coming soon! | |
 | Series Conclusion - coming soon! | |
 
 <br/>
