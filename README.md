@@ -6,11 +6,12 @@ Use these guides for staking on the Ethereum mainnet.
 
 | Guide <img width=345/> | Change Log <img width=400/> |
 | :--------- | :---------- |
-| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-lighthouse-773f5d982e03) | First Published 26 Nov 2020, Updated 22 Aug 2022 |
-| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-nimbus-31f56657ea8f) | First Published 26 Nov 2020, Updated 22 Aug 2022 |
-| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-prysm-581fb1969460) | First Published 27 Nov 2020, Updated 22 Aug 2022 |
-| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-teku-f09ecd9ef2ee) | First Published 26 Nov 2020, Updated 22 Aug 2022 |
+| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-lighthouse-773f5d982e03) | *22 Aug 2022* <br> - Merge-Ready version published <br><br> *26 Nov 2020* <br> - First Published |
+| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-nimbus-31f56657ea8f) | *22 Aug 2022* <br> - Merge-Ready version published <br><br> *26 Nov 2020* <br> - First Published |
+| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-prysm-581fb1969460) | *23 Aug 2022* <br> - Replaced `--http-web3provider` (deprecated) with `--execution-endpoint` on prysmbeacon service config <br><br> *22 Aug 2022* <br> - Merge-Ready version published <br><br> *27 Nov 2020* <br> - First Published |
+| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-teku-f09ecd9ef2ee) | *22 Aug 2022* <br> - Merge-Ready version published <br><br> *26 Nov 2020* <br> - First Published |
 | Ubuntu/LodeStar - coming soon! | |
+
 
 <br/>
 
