@@ -12,6 +12,8 @@ Use these guides for staking on the Ethereum mainnet.
 | [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-teku-f09ecd9ef2ee) | *23 Aug 2022* <br> - Added "A Note on the Merge" section to help existing stakers migrate to the Merge-Ready version. <br> - Added a note below the Geth service config to clarify existing setups can continue to use the directory path from the previous guide (`/var/lib/goethereum`). <br><br> *22 Aug 2022* <br> - Merge-Ready version published. <br><br> *26 Nov 2020* <br> - First Published. |
 | Ubuntu/LodeStar - coming soon! | |
 
+Extra help for those who used my original Eth2.0 guides: [Supplementary Guide to Staking on Ethereum For Existing Stakers](https://someresat.medium.com/supplementary-guide-to-staking-on-ethereum-for-existing-stakers-57493678a460)
+
 <br/>
 
 ## Goerli Testnet Staking Guides ##
