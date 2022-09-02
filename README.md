@@ -33,7 +33,7 @@ Use these guides to practice setting up your staking setup on the Etheruem Goerl
 
 <br/>
 
-## Mainnet Migration Guides ##
+## Mainnet Migration Guides (Not Merge Ready - Updates Pending) ##
 
 Use these guides to move from a majority client (Prysm) to a minority client on the Ethereum mainnet.
 
