@@ -25,11 +25,11 @@ Use these guides to practice setting up your staking setup on the Etheruem Goerl
 
 | Guide <img width=150/> | Change Log <img width=450/> |
 | :---- | :--------- |
-| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | Published 06 Aug 2022, Updated 13 August 2022 |
-| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) | Published 06 Aug 2022, Updated 13 August 2022 |
-| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) | Published 06 Aug 2022, Updated 13 August 2022 |
-| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | Published 07 Aug 2022, Updated 13 August 2022 |
-| Ubuntu/Lodestar - coming soon! | |
+| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) | Published 06 Aug 2022, Updated 10 Sep 2022 |
+| [Ubuntu/Lodestar](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097) | Published 10 Sep 2022 |
+| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | Published 07 Aug 2022, Updated 10 Sep 2022 |
+| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | Published 06 Aug 2022, Updated 10 Sep 2022 |
+| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) | Published 06 Aug 2022, Updated 10 Sep 2022 |
 
 <br/>
 
