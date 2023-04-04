@@ -27,11 +27,11 @@ Change log generally mirrors the mainnet guides.
 
 | Guide <img width=150/> | Change Log *(dd-mm-yy)* <img width=450/> |
 | :---- | :--------- |
-| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) | Published 06-08-22, Updated 10-02-23 |
-| [Ubuntu/Lodestar](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097) | Published 10-09-22, Updated 19-11-22 |
-| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | Published 07-08-22, Updated 19-11-22 |
-| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | Published 06-08-22, Updated 19-11-22 |
-| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) | Published 06-08-22, Updated 20-03-23 |
+| [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) | Published 06-08-22, Updated 04-04-23 |
+| [Ubuntu/Lodestar](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097) | Published 10-09-22, Updated 04-04-23 |
+| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | Published 07-08-22, Updated 04-04-23 |
+| [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | Published 06-08-22, Updated 04-04-23 |
+| [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) | Published 06-08-22, Updated 04-04-23 |
 
 <br/>
 
