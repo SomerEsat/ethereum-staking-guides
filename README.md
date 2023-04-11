@@ -1,6 +1,10 @@
 
 # Ethereum Staking Guides #
 
+## Withdrawal Guide ##
+
+[Guide to Configuring Withdrawal Credentials on Ethereum](https://someresat.medium.com/guide-to-configuring-withdrawal-credentials-on-ethereum-812dce3193a) - *11-04-23* Published
+
 ## Mainnet Staking Guides ##
 
 Use these guides for staking on the Ethereum mainnet.
