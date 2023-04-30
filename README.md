@@ -39,7 +39,7 @@ Change log generally mirrors the mainnet guides.
 | :---- | :--------- |
 | [Ubuntu/Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
 | [Ubuntu/Lodestar](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
-| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
+| [Ubuntu/Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | <br> *30-04-23* - Fixed incorrect flag in Prysm Beacon config. See [here](https://github.com/SomerEsat/ethereum-staking-guides/issues/9) for details. <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
 | [Ubuntu/Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
 | [Ubuntu/Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
 
