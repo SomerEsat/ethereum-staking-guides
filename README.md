@@ -1,6 +1,14 @@
 
 # Ethereum Staking Guides #
 
+## Donations Appreciated ##
+
+[Gitcoin Grants](https://explorer.gitcoin.co/#/round/1/0xaa40e2e5c8df03d792a52b5458959c320f86ca18/0xaa40e2e5c8df03d792a52b5458959c320f86ca18-4)
+
+Somer.eth (0x32B74B90407309F6637245292cd90347DE658A37)
+
+<br/>
+
 ## Update Withdrawal Credentials Guide ##
 
 Use this guide to update the withdrawal credentials from 0x00 to 0x01 for your validator(s).
