@@ -3,7 +3,7 @@
 
 ## Donations Appreciated ##
 
-[Gitcoin Grants](https://explorer.gitcoin.co/#/round/1/0xaa40e2e5c8df03d792a52b5458959c320f86ca18/0xaa40e2e5c8df03d792a52b5458959c320f86ca18-4)
+[Gitcoin Grants](https://bounties.gitcoin.co/grants/1634/ethereum-staking-guides-ubuntu), or
 
 Somer.eth (0x32B74B90407309F6637245292cd90347DE658A37)
 
