@@ -7,9 +7,9 @@
 
 Use this guide to update the withdrawal credentials from 0x00 to 0x01 for your validator(s).
 
-| Guide | Change Log *(dd-mm-yy)* <img width=285/> |
+| Guide | Change Log *(dd-mm-yy)* <img width=450/> |
 | :--------- | :---------- |
-| [Guide to Configuring Withdrawal Credentials on Ethereum](https://someresat.medium.com/guide-to-configuring-withdrawal-credentials-on-ethereum-812dce3193a) | <br> *16-04-23* - Fix typo & add extra warning prior to Submit & Broadcast. <br> *13-04-23* - Various updates to improve readability. <br> *12-04-23* - Added example Beaconcha.in submit success message. <br> *11-04-23* - Published. |
+| [Guide to Configuring <br> Withdrawal Credentials <br> on Ethereum](https://someresat.medium.com/guide-to-configuring-withdrawal-credentials-on-ethereum-812dce3193a) | <br> *16-04-23* - Fix typo & add extra warning prior to Submit & Broadcast. <br> *13-04-23* - Various updates to improve readability. <br> *12-04-23* - Added example Beaconcha.in submit success message. <br> *11-04-23* - Published. |
 
 <br/>
 
