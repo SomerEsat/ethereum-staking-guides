@@ -9,7 +9,7 @@ If you would like to become a solo staker, the **gold standard** for staking on 
 
 Required is a machine running Ubuntu (20.04 LTS) with a modern CPU, 16GB RAM (32GB is better) and a good quality 2TB SSD (4TB is better).
 
-Start with one of the [**Testnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides/edit/master/README.md#testnet-staking-guides) to practice or go straight to one of the [**Mainnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides/edit/master/README.md#mainnet-staking-guides) below.
+Start with one of the [**Testnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides#mainnet-staking-guides) to practice or go straight to one of the [**Mainnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides#testnet-staking-guides) below.
 
 If you're not sure which client to use, go with the one that has the lowest share. See here: https://clientdiversity.org. The guides below are named after the major **Consensus Clients** so you'll have to choose that one first. Each guide then contains instructions for installing an **Execution Client** which is required for staking as well. Again, it is recommended that you choose the one with the lowest share.
 
