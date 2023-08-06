@@ -80,8 +80,6 @@ Use these guides to move from a majority client (Prysm) to a minority client on 
 
 ## Donations Appreciated ##
 
-[Gitcoin Grants](https://bounties.gitcoin.co/grants/1634/ethereum-staking-guides-ubuntu), or
-
 Somer.eth (0x32B74B90407309F6637245292cd90347DE658A37)
 
 <br/>
