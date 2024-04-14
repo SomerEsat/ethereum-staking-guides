@@ -63,21 +63,6 @@ Stakers may use this guide to update withdrawal credentials on their validator(s
 
 <br/>
 
-## Mainnet Migration Guides (Not Merge Ready - Updates Pending) ##
-
-Use these guides to move from a majority client (Prysm) to a minority client on the Ethereum mainnet.
-
-| Guide <img width=150/> | Change Log *(dd-mm-yy)* <img width=450/> |
-| :---- | :--------- |
-| [Series Introduction](https://someresat.medium.com/ethereum-staker-migration-guides-introduction-45505079b1f0) | Published 12-04-22 |
-| [Migrating from Prysm to Nimbus](https://someresat.medium.com/ethereum-staker-migration-guide-migrating-from-prysm-to-nimbus-b802a7dcb31e) (NOT Merge Ready)| Published 11-05-22 |
-| Migrating from Prysm to Teku - coming soon! | |
-| Migrating from Prysm to Lodestar - coming soon! | |
-| Migrating from Prysm to Lighthouse - coming soon! | |
-| Series Conclusion - coming soon! | |
-
-<br/>
-
 ## Donations Appreciated ##
 
 Somer.eth (0x32B74B90407309F6637245292cd90347DE658A37)
