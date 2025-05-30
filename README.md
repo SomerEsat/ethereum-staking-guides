@@ -7,9 +7,9 @@ Welcome!
 
 If you would like to become a solo staker, the **gold standard** for staking on the Ethereum network, then these guides are for you! 
 
-Required is a machine running Ubuntu (22.04 LTS) with a modern CPU, 16GB RAM (32GB is better) and a good quality 2TB SSD (4TB is better).
+Required is a machine running Ubuntu (22.04 LTS or newer) with a modern CPU, 16GB RAM (32GB is better) and a good quality 2TB SSD (4TB is better).
 
-Start with one of the [**Testnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides#testnet-staking-guides) to practice (Note: These are in the process of being updated to the latest testnet - do not use) or go straight to one of the [**Mainnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides#mainnet-staking-guides) below.
+To get started, go to one of the [**Mainnet Staking Guides**](https://github.com/SomerEsat/ethereum-staking-guides#mainnet-staking-guides) below.
 
 If you're not sure which client to use, go with the one that has the lowest share. See here: https://clientdiversity.org. The guides below are named after the major **Consensus Clients** (Lighthouse, Lodestar, Prysm, Nimbus, and Teku) so you'll have to choose that one first. Each guide then contains instructions for installing an **Execution Client** which is required for staking as well. Again, it is recommended that you choose the one with the lowest share.
 
@@ -30,26 +30,6 @@ Use these guides for staking on the Ethereum mainnet.
 | [Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-prysm-581fb1969460) | <br> *20-08-24* - Added Reth Execution Client. <br> *24-06-24* - Updated Prysm client to 5.0.4. <br> *19-06-24* - Updated Prysm client to 5.0.3. <br> *18-06-24* - Updated Besu client to 24.5.4. <br> *18-06-24* - Updated Nethermind config to add Pruning flags. <br> *18-06-24* - Updated Nethermind config to remove Sync.AncientBodies/Receipts flags. <br> *18-06-24* - Updated Nethermind client to 1.26.0. <br> *18-06-24* - Updated Geth client to 1.14.5. <br> *18-06-24* - Updated Erigon client to 2.6.1. <br> *02-06-24* - Updated Erigon client to 2.6.0. <br> *02-06-24* - Removed Erigon deprecated config flag --externalcl per [Issue 13](https://github.com/SomerEsat/ethereum-staking-guides/issues/13). <br> *02-06-24* - Updated Erigon config to use the prebuilt binary. <br> *02-06-24* - Removed redundant Erigon prerequisites. <br> *30-05-24* - Updated Besu client to 24.5.2 and fixed broken links in Besu config flags section. <br> *30-05-24* - Updated Besu config to rename X_SNAP to SNAP per [#6405](https://github.com/hyperledger/besu/pull/6405). <br> *30-05-24* - Updated Besu prerequisites to require Java Runtime v21 (headless). <br> *27-04-24* - Added table of contents. <br> *27-04-24* - Increased Ubuntu Server Version to 22.04. <br> See [Change Log Archive](https://github.com/SomerEsat/ethereum-staking-guides/blob/master/ChangeLogArchive.md). |
 | [Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-nimbus-31f56657ea8f) | <br> *20-08-24* - Added Reth Execution Client. <br> *24-06-24* - Updated Nimbus client to 24.6.0. <br> *19-06-24* - Updated Nimbus client to 24.5.0. <br> *18-06-24* - Updated Besu client to 24.5.4. <br> *18-06-24* - Updated Nethermind config to add Pruning flags. <br> *18-06-24* - Updated Nethermind config to remove Sync.AncientBodies/Receipts flags. <br> *18-06-24* - Updated Nethermind client to 1.26.0. <br> *18-06-24* - Updated Geth client to 1.14.5. <br> *18-06-24* - Updated Erigon client to 2.6.1. <br> *02-06-24* - Updated Erigon client to 2.6.0. <br> *02-06-24* - Removed Erigon deprecated config flag --externalcl per [Issue 13](https://github.com/SomerEsat/ethereum-staking-guides/issues/13). <br> *02-06-24* - Updated Erigon config to use the prebuilt binary. <br> *02-06-24* - Removed redundant Erigon prerequisites. <br> *30-05-24* - Updated Besu client to 24.5.2 and fixed broken links in Besu config flags section. <br> *30-05-24* - Updated Besu config to rename X_SNAP to SNAP per [#6405](https://github.com/hyperledger/besu/pull/6405). <br> *30-05-24* - Updated Besu prerequisites to require Java Runtime v21 (headless). <br> *27-04-24* - Added table of contents. <br> *27-04-24* - Increased Ubuntu Server Version to 22.04. <br> See [Change Log Archive](https://github.com/SomerEsat/ethereum-staking-guides/blob/master/ChangeLogArchive.md). |
 | [Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-teku-f09ecd9ef2ee) | <br> *20-08-24* - Added Reth Execution Client. <br> *19-06-24* - Updated Teku prerequisites to require Java Runtime v21 (headless). <br> *19-06-24* - Updated Teku client to 24.6.0. <br> *18-06-24* - Updated Besu client to 24.5.4. <br> *18-06-24* - Updated Nethermind config to add Pruning flags. <br> *18-06-24* - Updated Nethermind config to remove Sync.AncientBodies/Receipts flags. <br> *18-06-24* - Updated Nethermind client to 1.26.0. <br> *18-06-24* - Updated Geth client to 1.14.5. <br> *18-06-24* - Updated Erigon client to 2.6.1. <br> *02-06-24* - Updated Erigon client to 2.6.0. <br> *02-06-24* - Removed Erigon deprecated config flag --externalcl per [Issue 13](https://github.com/SomerEsat/ethereum-staking-guides/issues/13). <br> *02-06-24* - Updated Erigon config to use the prebuilt binary. <br> *02-06-24* - Removed redundant Erigon prerequisites. <br> *30-05-24* - Updated Besu client to 24.5.2 and fixed broken links in Besu config flags section. <br> *30-05-24* - Updated Besu config to rename X_SNAP to SNAP per [#6405](https://github.com/hyperledger/besu/pull/6405). <br> *30-05-24* - Updated Besu prerequisites to require Java Runtime v21 (headless). <br> *18-05-24* - Added table of contents. <br> *18-05-24* - Increased Ubuntu Server Version to 22.04. <br> See [Change Log Archive](https://github.com/SomerEsat/ethereum-staking-guides/blob/master/ChangeLogArchive.md). |
-
-<br/>
-
-## Testnet Staking Guides ##
-
-Use these guides to practice setting up your staking setup on the Etheruem Goerli testnet.
-
-Change log generally mirrors the mainnet guides.
-
-**DO NOT USE FOR MAINNET**
-
-(Note: These are in the process of being updated to the latest testnet - do not use)
-
-| Guide <img width=150/> | Change Log *(dd-mm-yy)* <img width=450/> |
-| :---- | :--------- |
-| [Lighthouse](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-lighthouse-8d0a2a811e6e) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
-| [Lodestar](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-lodestar-f3c8f77e7097) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
-| [Prysm](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-prysm-4a640794e8b5) | <br> *30-04-23* - Fixed incorrect flag in Prysm Beacon config. See [here](https://github.com/SomerEsat/ethereum-staking-guides/issues/9) for details. <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
-| [Nimbus](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-goerli-nimbus-3b0e2c0c6e0e) | <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
-| [Teku](https://someresat.medium.com/guide-to-staking-on-ethereum-ubuntu-g%C3%B6erli-teku-6512b26f1372) | <br> *18-07-23* - Updated Teku client prerequisite to Java 17 for install and update. <br> *15-04-23* - Added EthStaker Goerli bot instructions for staking-deposit-cli. <br> *06-08-22* - Published. |
 
 <br/>
 
