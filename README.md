@@ -1,4 +1,35 @@
 
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=SomerEsat&project=ethereum-staking-guides&lang=id">Bahasa Indonesia</a>
+      </div>
+    </div>
+  </details>
+</div>
+
+
 # Ethereum Staking Guides #
 
 ## Introduction ##
